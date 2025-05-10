@@ -1,0 +1,19 @@
+services:
+  latex_compiler:
+    build:
+      context: . # Specifica che il contesto di build è la directory corrente
+      dockerfile: Dockerfile # Specifica il nome del Dockerfile
+    volumes:
+      - .:/cv_src # Monta la directory corrente in /cv_src del container
+    
+    # Esegue lo script di compilazione.
+    # Lo script è stato copiato in /cv_src e reso eseguibile nel Dockerfile.
+    # Possiamo passare il nome del file .tex come argomento allo script.
+    # Se lo script usa un default (come 'resume_cv.tex'), l'argomento è opzionale.
+    command: /cv_src/compile_cv.sh resume_cv.tex
+    # In alternativa, se lo script 'compile_cv.sh' ha già 'resume_cv.tex' come default
+    # e non vuoi passare argomenti:
+    # command: /cv_src/compile_cv.sh
+
+    # (Opzionale) Per mantenere il container in esecuzione per debug (decommenta se necessario)
+    # tty: true
