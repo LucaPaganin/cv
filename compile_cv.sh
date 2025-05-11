@@ -14,11 +14,16 @@ echo "==> Il PDF risultante sarà: $PDF_FILE"
 # -xelatex: Specifica di usare XeLaTeX
 # -interaction=nonstopmode: Evita che la compilazione si blocchi in attesa di input
 # -file-line-error: Formatta gli errori in modo più leggibile
-# -output-directory=out: (Opzionale) Per mettere i file ausiliari in una sottocartella 'out'
-#   Se usi output-directory, il PDF sarà in out/$PDF_FILE. Per semplicità, non la usiamo qui.
+# -output-directory=out: Per mettere i file ausiliari in una sottocartella 'out'
+#   Con output-directory, il PDF sarà in out/$PDF_FILE.
+
+# Crea la directory di output se non esiste
+mkdir -p out
+
 latexmk -xelatex \
         -interaction=nonstopmode \
         -file-line-error \
+        -output-directory=out \
         "$MAIN_TEX_FILE"
 
 echo "==> Compilazione terminata."
@@ -26,7 +31,7 @@ echo "==> Compilazione terminata."
 # Gestione dei permessi dei file generati (importante se il container gira come root e l'host è Linux/macOS)
 # Su Docker Desktop per Windows, la gestione dei permessi è solitamente trasparente,
 # ma questa parte cerca di generalizzare. Potrebbe dare un warning se 'stat' o 'chown' non si comportano come atteso.
-if [ -f "$PDF_FILE" ]; then
+if [ -f "out/$PDF_FILE" ]; then
     echo "==> Aggiornamento permessi per i file generati..."
     
     # Prova a ottenere UID e GID dalla directory corrente (montata dall'host)
@@ -38,20 +43,15 @@ if [ -f "$PDF_FILE" ]; then
 
     # Elenco dei file comuni da aggiornare. Aggiungi altre estensioni se necessario.
     # L'opzione -r di xargs è per non eseguire chown se non ci sono file.
-    find . -maxdepth 1 \( \
-        -name "*.pdf" -o \
-        -name "*.log" -o \
-        -name "*.aux" -o \
-        -name "*.fls" -o \
-        -name "*.fdb_latexmk" -o \
-        -name "*.synctex.gz" -o \
-        -name "*.toc" -o \
-        -name "*.out" \
-        \) -print0 | xargs -0 -r chown "$TARGET_UID:$TARGET_GID" 2>/dev/null || echo "==> Avviso: chown potrebbe non aver funzionato come previsto (normale su alcune configurazioni Windows o se i file non sono stati generati)."
+    find out -type f -print0 | xargs -0 -r chown "$TARGET_UID:$TARGET_GID" 2>/dev/null || echo "==> Avviso: chown potrebbe non aver funzionato come previsto (normale su alcune configurazioni Windows o se i file non sono stati generati)."
     
-    echo "==> PDF generato: $PDF_FILE"
+    # Copia il PDF dalla directory out alla root per retrocompatibilità
+    cp "out/$PDF_FILE" "./$PDF_FILE"
+    chown "$TARGET_UID:$TARGET_GID" "./$PDF_FILE" 2>/dev/null || echo "==> Avviso: chown sul PDF copiato potrebbe non aver funzionato come previsto."
+    
+    echo "==> PDF generato: out/$PDF_FILE (e copiato in ./$PDF_FILE)"
 else
-    echo "==> ERRORE: File PDF $PDF_FILE non trovato dopo la compilazione."
+    echo "==> ERRORE: File PDF out/$PDF_FILE non trovato dopo la compilazione."
     exit 1
 fi
 

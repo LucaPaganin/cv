@@ -1,0 +1,49 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Resume PDF",
+            "type": "shell",
+            "command": "docker-compose up",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "problemMatcher": [],
+            "detail": "Builds the resume PDF using docker-compose"
+        },
+        {
+            "label": "Rebuild Resume PDF (force rebuild)",
+            "type": "shell",
+            "command": "docker-compose up --build",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "problemMatcher": [],
+            "detail": "Rebuilds the Docker image and builds the resume PDF"
+        },
+        {
+            "label": "Clean up Docker resources",
+            "type": "shell",
+            "command": "docker-compose down",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "problemMatcher": [],
+            "detail": "Stops and removes Docker containers created by docker-compose"
+        }
+    ]
+}
