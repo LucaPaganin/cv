@@ -4,7 +4,7 @@
         {
             "label": "Build Resume PDF",
             "type": "shell",
-            "command": "docker-compose up",
+            "command": "Remove-Item out -Recurse; docker-compose run --rm latex_compiler",
             "group": {
                 "kind": "build",
                 "isDefault": true
