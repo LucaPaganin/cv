@@ -19,7 +19,8 @@ echo "==> Il PDF risultante sarà: $PDF_FILE"
 
 # Crea la directory di output se non esiste
 mkdir -p out
-
+# Disabilita l'uscita immediata in caso di errore
+set +e
 latexmk -xelatex \
         -interaction=nonstopmode \
         -file-line-error \
