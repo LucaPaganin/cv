@@ -41,6 +41,8 @@
 %\definecolor{lighttext}{HTML}{414141}
 
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
+\usepackage{ifthen}
+\newcommand{\cvLang}{it} % Set to 'it' or 'en' to select language
 
 %----------------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -78,15 +80,15 @@
 %	Each section is imported separately, open each file in turn to modify content
 %----------------------------------------------------------------------------------------
 
-\input{resume-sections/education.tex}
-\input{resume-sections/experience.tex}
-\input{resume-sections/skills.tex}
-
-\input{resume-sections/extracurricular.tex}
-\input{resume-sections/writing.tex}
-\input{resume-sections/presentation.tex}
-\input{resume-sections/honors.tex}
-\input{resume-sections/committees.tex}
+% Load localized sections
+\input{resume-sections/\cvLang/education.tex}
+\input{resume-sections/\cvLang/experience.tex}
+\input{resume-sections/\cvLang/skills.tex}
+\input{resume-sections/\cvLang/extracurricular.tex}
+\input{resume-sections/\cvLang/writing.tex}
+\input{resume-sections/\cvLang/presentation.tex}
+\input{resume-sections/\cvLang/honors.tex}
+\input{resume-sections/\cvLang/committees.tex}
 
 %----------------------------------------------------------------------------------------
 
