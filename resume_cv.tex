@@ -42,7 +42,16 @@
 
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
 \usepackage{ifthen}
-\newcommand{\cvLang}{en} % Set to 'it' or 'en' to select language
+% Define language switch
+\newif\ifenglish
+\englishtrue  % Set to \englishfalse for Italian
+
+% Set babel language based on condition
+\ifenglish
+  \selectlanguage{english}
+\else
+  \selectlanguage{italian}
+\fi
 
 %----------------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -60,9 +69,9 @@
 %\skype{skypeid}
 \stackoverflow{8850078}{lpaganin}
 %\twitter{@twit}
-%\reddit{reddit account}
+\reddit{LPLawliet}
 %\xing{xing name}
-%\extrainfo{Birth: 28/10/1996} % Other text you want to include on this line
+\extrainfo{Birth: 17/08/1994} % Other text you want to include on this line
 
 \position{Physicist{\enskip\cdotp\enskip}Software Developer{\enskip\cdotp\enskip}AI Engineer} % Your expertise/fields
 \quote{``I have no special talent. I am only passionately curious." -- Albert Einstein} % A quote or statement
@@ -81,14 +90,14 @@
 %----------------------------------------------------------------------------------------
 
 % Load localized sections
-\input{resume-sections/\cvLang/education.tex}
-\input{resume-sections/\cvLang/experience.tex}
-\input{resume-sections/\cvLang/skills.tex}
-\input{resume-sections/\cvLang/extracurricular.tex}
-\input{resume-sections/\cvLang/writing.tex}
-\input{resume-sections/\cvLang/presentation.tex}
-\input{resume-sections/\cvLang/honors.tex}
-\input{resume-sections/\cvLang/committees.tex}
+\input{resume-sections/education.tex}
+\input{resume-sections/experience.tex}
+\input{resume-sections/skills.tex}
+\input{resume-sections/extracurricular.tex}
+\input{resume-sections/writing.tex}
+\input{resume-sections/presentation.tex}
+\input{resume-sections/honors.tex}
+\input{resume-sections/committees.tex}
 
 %----------------------------------------------------------------------------------------
 
