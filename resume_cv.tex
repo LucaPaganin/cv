@@ -46,13 +46,6 @@
 \newif\ifenglish
 \englishtrue  % Set to \englishfalse for Italian
 
-% Set babel language based on condition
-\ifenglish
-  \selectlanguage{english}
-\else
-  \selectlanguage{italian}
-\fi
-
 %----------------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
@@ -90,8 +83,8 @@
 %----------------------------------------------------------------------------------------
 
 % Load sections with language conditional logic
-\input{resume-sections/education.tex}
 \input{resume-sections/experience.tex}
+\input{resume-sections/education.tex}
 \input{resume-sections/skills.tex}
 \input{resume-sections/extracurricular.tex}
 \input{resume-sections/writing.tex}
