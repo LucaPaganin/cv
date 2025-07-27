@@ -3,7 +3,7 @@
 %	SECTION TITLE
 %----------------------------------------------------------------------------------------
 
-\cvsection{Esperienze professionali}
+\cvsection{\ifenglish Professional Experience\else Esperienze professionali\fi}
 
 %----------------------------------------------------------------------------------------
 %	SECTION CONTENT
@@ -13,6 +13,18 @@
 
 %------------------------------------------------
 
+\ifenglish
+\cventry
+{Cloud Backend Developer} % Job title
+{RINA S.p.A.} % Organization
+{Genoa, Italy} % Location
+{Nov. 2024 -- Present} % Date(s)
+{ % Description(s) of tasks/responsibilities
+\begin{cvitems}
+  \item {Responsible for developing a serverless Python backend on Azure Functions for RINA's digital certification platform, primarily serving steel mill clients to certify their environmental sustainability efforts.}
+\end{cvitems}
+}
+\else
 \cventry
 {Sviluppatore Backend Cloud} % Job title
 {RINA S.p.A.} % Organization
@@ -23,9 +35,25 @@
   \item {Mi occupo dello sviluppo del backend serverless in Python su Azure Functions per la piattaforma di certificazione digitale di RINA, rivolta principalmente alle acciaierie clienti che vogliono certificare il loro impegno di sostenibilità ambientale.}
 \end{cvitems}
 }
+\fi
 
 %------------------------------------------------
 
+\ifenglish
+\cventry
+{Junior Full Stack Developer} % Job title
+{Rulex Innovation Labs} % Organization
+{Genoa, Italy} % Location
+{Nov. 2021 -- Oct. 2024} % Date(s)
+{ % Description(s) of tasks/responsibilities
+\begin{cvitems}
+  \item {As part of the software development team, handled inter-service messaging, REST API implementation, and DevOps activities, and built/maintained the CLI for the Rulex Platform.}
+  \item {Built and maintained CI/CD pipelines using Azure DevOps Pipelines.}
+  \item {Deployed and tested cloud infrastructure with Terraform and Kubernetes.}
+  \item {Developed primarily in Python and JavaScript (Node.js and React), including C++ plugins invoked from Python.}
+\end{cvitems}
+}
+\else
 \cventry
 {Junior Full Stack Developer} % Job title
 {Rulex Innovation Labs} % Organization
@@ -42,9 +70,22 @@
 \item {Ho sviluppato principalmente in Python e JavaScript (Node.js e React), con qualche plugin in C++ chiamato da Python.}
 \end{cvitems}
 }
+\fi
 
 %------------------------------------------------    
 
+\ifenglish
+\cventry
+{University Teaching Assistant} % Job title
+{University of Genoa} % Organization
+{Genoa, Italy} % Location
+{Sep. 2019 -- Sep. 2021} % Date(s)
+{ % Description(s)
+\begin{cvitems}
+  \item {Delivered lectures and guided exercises for the General Physics course aimed at Chemical and Electrical Engineering students.}
+\end{cvitems}
+}
+\else
 \cventry
 {Esercitatore universitario} % Job title
 {Università degli Studi di Genova} % Organization
@@ -55,9 +96,22 @@
 \item {Lezioni frontali e esercitazioni guidate per il corso di Fisica Generale rivolto agli studenti di Ingegneria Chimica ed Elettrica.}
 \end{cvitems}
 }
+\fi
 
 %------------------------------------------------
 
+\ifenglish
+\cventry
+{University Tutor} % Job title
+{University of Genoa} % Organization
+{Genoa, Italy} % Location
+{Sep. 2017 -- Sep. 2018} % Date(s)
+{ % Description(s)
+\begin{cvitems}
+  \item {Provided tutoring in General Physics, Mathematical Analysis, and Linear Algebra to first-year Physics and Mathematics students, enhancing communication and interpersonal skills.}
+\end{cvitems}
+}
+\else
 \cventry
 {Tutor universitario} % Job title
 {Università degli Studi di Genova} % Organization
@@ -69,6 +123,7 @@
 \item {Sviluppo di competenze comunicative e relazionali attraverso il supporto agli studenti.}
 \end{cvitems}
 }
+\fi
 
 %------------------------------------------------
 

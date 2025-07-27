@@ -2,11 +2,7 @@
 %    SECTION TITLE
 %----------------------------------------------------------------------------------------
 
-\ifthenelse{\equal{\cvLang}{it}}{%
-  \cvsection{Pubblicazioni}%
-}{%
-  \cvsection{Publications}%
-}
+\cvsection{\ifenglish Publications\else Pubblicazioni\fi}
 
 %----------------------------------------------------------------------------------------
 %    SECTION CONTENT
@@ -16,90 +12,63 @@
 
 %------------------------------------------------
 
-\ifthenelse{\equal{\cvLang}{it}}{%
-  % Italian entries
-  \cventry
-  {Co-autore} % Role
-  {Sentient Spaces: Intelligent Totem Use Case in the ECSEL FRACTAL Project} % Title
-  {2022} % Date(s)
-  { % Description(s)
-  \begin{cvitems}
-    \item {FRACTAL project: edge computing, IoT, totem intelligente per centri commerciali}
-    \item {\url{https://fractal-project.eu/}}
-  \end{cvitems}
-  }
-  %------------------------------------------------
-  \cventry
-  {Co-autore} % Role
-  {Euclid preparation: 6x2pt analysis for Euclid main probes} % Title
-  {2021} % Date(s)
-  { % Description(s)
-  \begin{cvitems}
-    \item {Collaborazione Euclid, analisi dati cosmologici, pubblicazione in corso}
-  \end{cvitems}
-  }
-  %------------------------------------------------
-  \cventry
-  {Co-autore} % Role
-  {Euclid: Forecasts from the void-lensing cross-correlation} % Title
-  {2021} % Date(s)
-  { % Description(s)
-  \begin{cvitems}
-    \item {Collaborazione Euclid, previsioni cosmologiche, pubblicazione in corso}
-  \end{cvitems}
-  }
-  %------------------------------------------------
-  \cventry
-  {Co-autore} % Role
-  {A Proposal for Relative In-flight Flux Self-calibrations for Spectro-photometric Surveys} % Title
-  {2021} % Date(s)
-  { % Description(s)
-  \begin{cvitems}
-    \item {Metodo per la self-calibrazione di spettrofotometri su satellite, simulazioni e validazione}
-  \end{cvitems}
-  }
-}{%
-  % English entries
-  \cventry
-  {Co-author} % Role
-  {Sentient Spaces: Intelligent Totem Use Case in the ECSEL FRACTAL Project} % Title
-  {2022} % Date(s)
-  { % Description(s)
-  \begin{cvitems}
-    \item {FRACTAL project: edge computing, IoT, intelligent totems for shopping malls}
-    \item {\url{https://fractal-project.eu/}}
-  \end{cvitems}
-  }
-  %------------------------------------------------
-  \cventry
-  {Co-author} % Role
-  {Euclid preparation: 6x2pt analysis for Euclid main probes} % Title
-  {2021} % Date(s)
-  { % Description(s)
-  \begin{cvitems}
-    \item {Euclid collaboration, cosmological data analysis, publication in progress}
-  \end{cvitems}
-  }
-  %------------------------------------------------
-  \cventry
-  {Co-author} % Role
-  {Euclid: Forecasts from the void-lensing cross-correlation} % Title
-  {2021} % Date(s)
-  { % Description(s)
-  \begin{cvitems}
-    \item {Euclid collaboration, cosmological forecasts, publication in progress}
-  \end{cvitems}
-  }
-  %------------------------------------------------
-  \cventry
-  {Co-author} % Role
-  {A Proposal for Relative In-flight Flux Self-calibrations for Spectro-photometric Surveys} % Title
-  {2021} % Date(s)
-  { % Description(s)
-  \begin{cvitems}
-    \item {Method for relative in-flight flux self-calibration of spectrophotometers, simulations and validation}
-  \end{cvitems}
-  }
+%------------------------------------------------
+\cventry
+{\ifenglish Co-author\else Co-autore\fi} % Role
+{Sentient Spaces: Intelligent Totem Use Case in the ECSEL FRACTAL Project} % Title
+{2022} % Date(s)
+{ % Description(s)
+\begin{cvitems}
+  \ifenglish
+  \item {FRACTAL project: edge computing, IoT, intelligent totems for shopping malls}
+  \else
+  \item {FRACTAL project: edge computing, IoT, totem intelligente per centri commerciali}
+  \fi
+  \item {\url{https://fractal-project.eu/}}
+\end{cvitems}
+}
+%------------------------------------------------
+\cventry
+{\ifenglish Co-author\else Co-autore\fi} % Role
+{Euclid preparation: 6x2pt analysis for Euclid main probes} % Title
+{2021} % Date(s)
+{ % Description(s)
+\begin{cvitems}
+  \ifenglish
+  \item {Euclid collaboration, cosmological data analysis, publication in progress}
+  \else
+  \item {Collaborazione Euclid, analisi dati cosmologici, pubblicazione in corso}
+  \fi
+\end{cvitems}
+}
+%------------------------------------------------
+\cventry
+{\ifenglish Co-author\else Co-autore\fi} % Role
+{Euclid: Forecasts from the void-lensing cross-correlation} % Title
+{2021} % Date(s)
+{ % Description(s)
+\begin{cvitems}
+  \ifenglish
+  \item {Euclid collaboration, cosmological forecasts, publication in progress}
+  \else
+  \item {Collaborazione Euclid, previsioni cosmologiche, pubblicazione in corso}
+  \fi
+\end{cvitems}
+}
+%------------------------------------------------
+\cventry
+{\ifenglish Co-author\else Co-autore\fi} % Role
+{A Proposal for Relative In-flight Flux Self-calibrations for Spectro-photometric Surveys} % Title
+{2021} % Date(s)
+{ % Description(s)
+\begin{cvitems}
+  \ifenglish
+  \item {Method for relative in-flight flux self-calibration of spectrophotometers, simulations and validation}
+  \else
+  \item {Metodo per la self-calibrazione di spettrofotometri su satellite, simulazioni e validazione}
+  \fi
+\end{cvitems}
+}
 }
 
 \end{cventries}
