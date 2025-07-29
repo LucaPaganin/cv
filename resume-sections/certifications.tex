@@ -2,7 +2,11 @@
 %    SECTION TITLE
 %----------------------------------------------------------------------------------------
 
-\cvsection{\ifenglish Professional Certifications\else Certificazioni Professionali \fi}
+\cvsection{
+  \ifenglish{Professional Certifications}
+  \else{Certificazioni Professionali}
+  \fi
+}
 
 %----------------------------------------------------------------------------------------
 %    SECTION CONTENT
@@ -12,73 +16,54 @@
 
 %------------------------------------------------
 % Usage: \cventry[<url>]{<position>}{<title>}{<location>}{<date>}{<description>}
-\ifenglish
+
+% Using globally defined variables for shared content
+
 \cventry[https://learn.microsoft.com/api/credentials/share/en-us/LucaPAGANIN-4094/FB9B1E110ABFBD41?sharingId=5B3F8E334DD7DB48]
-{Microsoft Certified} % Category
+{\msCertified} % Category
 {AZ-900: Azure Fundamentals} % Certification
-{Microsoft} % Authority
+{\msAuthority} % Authority
 {Feb 2025} % Date
 { % Description(s)
 \begin{cvitems}
-  \item {Validated foundational understanding of cloud concepts and Azure services, pricing, SLAs, and lifecycle}
+  \item {
+    \ifenglish{Validated foundational understanding of cloud concepts and Azure services, pricing, SLAs, and lifecycle}
+    \else{Convalidata comprensione fondamentale dei concetti cloud e dei servizi Azure, prezzi, SLA e ciclo di vita}
+    \fi
+  }
 \end{cvitems}
 }
 
 \cventry[https://learn.microsoft.com/api/credentials/share/en-us/LucaPAGANIN-4094/3497262505DECF30?sharingId=5B3F8E334DD7DB48]
-{Microsoft Certified} % Category
+{\msCertified} % Category
 {AI-900: Azure AI Fundamentals} % Certification
-{Microsoft} % Authority
+{\msAuthority} % Authority
 {Mar 2025} % Date
 { % Description(s)
 \begin{cvitems}
-  \item {Demonstrated knowledge of common AI workloads and Microsoft's AI services for machine learning, computer vision, natural language processing, and conversational AI}
+  \item {
+    \ifenglish{Demonstrated knowledge of common AI workloads and Microsoft's AI services for machine learning, computer vision, natural language processing, and conversational AI}
+    \else{Dimostrata conoscenza dei comuni carichi di lavoro AI e dei servizi Microsoft AI per machine learning, computer vision, elaborazione del linguaggio naturale e AI conversazionale}
+    \fi
+  }
 \end{cvitems}
 }
 
 \cventry[https://learn.microsoft.com/api/credentials/share/en-us/LucaPAGANIN-4094/5B91CBA2289468CB?sharingId=5B3F8E334DD7DB48]
-{Microsoft Certified} % Category
+{\msCertified} % Category
 {AI-102: Azure AI Engineer Associate} % Certification
-{Microsoft} % Authority
-{Jun 2025} % Date
+{\msAuthority} % Authority
+{\ifenglish{Jun 2025}\else{Giu 2025}\fi} % Date
 { % Description(s)
 \begin{cvitems}
-  \item {Proven ability to implement and manage AI solutions on Azure, including cognitive services, knowledge mining, conversational and agentic AI}
-\end{cvitems}
-}
-\else
-\cventry[https://learn.microsoft.com/api/credentials/share/en-us/LucaPAGANIN-4094/FB9B1E110ABFBD41?sharingId=5B3F8E334DD7DB48]
-{Microsoft Certified} % Category
-{AZ-900: Azure Fundamentals} % Certification
-{Microsoft} % Authority
-{Feb 2025} % Date
-{ % Description(s)
-\begin{cvitems}
-  \item {Convalidata comprensione fondamentale dei concetti cloud e dei servizi Azure, prezzi, SLA e ciclo di vita}
+  \item {
+    \ifenglish{Proven ability to implement and manage AI solutions on Azure, including cognitive services, knowledge mining, conversational and agentic AI}
+    \else{Comprovata capacità di implementare e gestire soluzioni AI su Azure, inclusi servizi cognitivi, knowledge mining, AI conversazionale e agentica}
+    \fi
+  }
 \end{cvitems}
 }
 
-\cventry[https://learn.microsoft.com/api/credentials/share/en-us/LucaPAGANIN-4094/3497262505DECF30?sharingId=5B3F8E334DD7DB48]
-{Microsoft Certified} % Category
-{AI-900: Azure AI Fundamentals} % Certification
-{Microsoft} % Authority
-{Mar 2025} % Date
-{ % Description(s)
-\begin{cvitems}
-  \item {Dimostrata conoscenza dei comuni carichi di lavoro AI e dei servizi Microsoft AI per machine learning, computer vision, elaborazione del linguaggio naturale e AI conversazionale}
-\end{cvitems}
-}
-
-\cventry[https://learn.microsoft.com/api/credentials/share/en-us/LucaPAGANIN-4094/5B91CBA2289468CB?sharingId=5B3F8E334DD7DB48]
-{Microsoft Certified} % Category
-{AI-102: Azure AI Engineer Associate} % Certification
-{Microsoft} % Authority
-{Giu 2025} % Date
-{ % Description(s)
-\begin{cvitems}
-  \item {Comprovata capacità di implementare e gestire soluzioni AI su Azure, inclusi servizi cognitivi, knowledge mining, AI conversazionale e agentica}
-\end{cvitems}
-}
-\fi
 %------------------------------------------------
 
 \end{cventries}
