@@ -564,9 +564,9 @@
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}[<url>]
 \newcommand*{\cventry}[6][]{%
-  \vspace{-2.0mm}
+  %\vspace{-1.0mm}
   \setlength\tabcolsep{0pt}
-  \setlength{\extrarowheight}{0pt}
+  \setlength{\extrarowheight}{1pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#3#4}
       {\entrypositionstyle{#2} & \entrydatestyle{#5} \\}

@@ -9,6 +9,7 @@
 % Original author:
 % Claud D. Park (posquit0.bj@gmail.com) with modifications by 
 % Vel (vel@latextemplates.com)
+% Modified by Luca Paganin on July 29th 2025
 %
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
@@ -18,110 +19,57 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------
+%%%%%%%%%%%%%% LANGUAGE SWITCH %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------------------------------------------------------
+% Define language switch
+\newif\ifenglish
+% \englishtrue     % Uncomment for English
+\englishfalse      % Uncomment for Italian
+%------------------------------------------------------------
+
+%------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------
 
 \documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
 
-\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
-
-\fontdir[fonts/] % Specify the location of the included fonts
-
-% Include our custom font configuration
-\input{fontconfig}
-
-% Color for highlights
-\colorlet{awesome}{awesome-red} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
-%\definecolor{awesome}{HTML}{CA63A8} % Uncomment if you would like to specify your own color
-
-% Colors for text - uncomment and modify
-%\definecolor{darktext}{HTML}{414141}
-%\definecolor{text}{HTML}{414141}
-%\definecolor{graytext}{HTML}{414141}
-%\definecolor{lighttext}{HTML}{414141}
-
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
-\usepackage{ifthen}
-% Load font patch
-\input{fontpatch}
-% Define language switch
-\newif\ifenglish
-\englishfalse  % Set to \englishfalse for Italian
-
-% Add proper language support
-\usepackage{polyglossia}
+\usepackage{preamble}
 \ifenglish
-  \setmainlanguage{english}
-  \setotherlanguage{italian}
+\selectlanguage{english}
 \else
-  \setmainlanguage{italian}
-  \setotherlanguage{english}
+\selectlanguage{italian}
 \fi
 
-% Ensure consistent font features
-\defaultfontfeatures{Ligatures=TeX, Scale=MatchLowercase}
-
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------
 %	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------
 
-\name{Luca}{Paganin}
-\address{Genova, Italy}
-\mobile{+39 3338153174}
-\photo{img/fototessera.jpeg} % Path to your photo
-\email{luca.paganin1994@gmail.com}
-\homepage{lucapaganin.com}
-\github{LucaPaganin}
-\linkedin{luca-paganin-054215159}
-%\skype{skypeid}
-\stackoverflow{8850078}{lpaganin}
-%\twitter{@twit}
-\reddit{LPLawliet}
-%\xing{xing name}
-\extrainfo{Birth: 17/08/1994} % Other text you want to include on this line
+\input{personal_info}
 
-\position{Physicist{\enskip\cdotp\enskip}Software Developer{\enskip\cdotp\enskip}AI Engineer} % Your expertise/fields
-\quote{``I have no special talent. I am only passionately curious." -- Albert Einstein} % A quote or statement
-
-\makecvfooter{\today}{Luca Paganin~~~·~~~Curriculum Vitae}{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
-
-%----------------------------------------------------------------------------------------
-% Global variables for bilingual content
-%----------------------------------------------------------------------------------------
-
-% Locations
-\def\genoaLoc{\ifenglish{Genoa, Italy}\else{Genova, Italia}\fi}
-
-% Organizations
-\def\uniTeachOrg{\ifenglish{University of Genoa}\else{Università degli Studi di Genova}\fi}
-\def\msAuthority{Microsoft}
-\def\msCertified{Microsoft Certified}
-
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------
 
 \begin{document}
 
 \makecvheader % Print the header
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------
 
 % Load sections with language conditional logic
 \input{resume-sections/experience.tex}
 \input{resume-sections/certifications.tex}
 \input{resume-sections/education.tex}
 \input{resume-sections/skills.tex}
-\input{resume-sections/extracurricular.tex}
-\input{resume-sections/writing.tex}
-\input{resume-sections/presentation.tex}
+\input{resume-sections/projects.tex}
+\input{resume-sections/publications.tex}
+\input{resume-sections/conferences.tex}
 \input{resume-sections/honors.tex}
-\input{resume-sections/committees.tex}
+\input{resume-sections/professional_activities}
 
 %----------------------------------------------------------------------------------------
 
