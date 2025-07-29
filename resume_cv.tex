@@ -30,6 +30,9 @@
 
 \fontdir[fonts/] % Specify the location of the included fonts
 
+% Include our custom font configuration
+\input{fontconfig}
+
 % Color for highlights
 \colorlet{awesome}{awesome-red} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
 %\definecolor{awesome}{HTML}{CA63A8} % Uncomment if you would like to specify your own color
@@ -42,6 +45,8 @@
 
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
 \usepackage{ifthen}
+% Load font patch
+\input{fontpatch}
 % Define language switch
 \newif\ifenglish
 \englishfalse  % Set to \englishfalse for Italian

@@ -1,0 +1,83 @@
+% Font configuration for better Italian accent support
+% This file should be imported in resume_cv.tex after \documentclass but before beginning the document
+
+% Define font feature settings for better accent support
+\defaultfontfeatures{
+  Ligatures=TeX,
+  Path=\@fontdir,
+  Scale=1.0,
+  Extension=.ttf,
+}
+
+% Define Source Sans Pro with explicit features
+\newfontfamily\sourcesansprofont[
+  Path=\@fontdir,
+  UprightFont=*-Regular.otf,
+  ItalicFont=*-It.otf,
+  BoldFont=*-Bold.otf,
+  BoldItalicFont=*-BoldIt.otf,
+  Scale=1.0,
+  Ligatures=TeX,
+  BoldItalicFeatures={SmallCapsFont=*-BoldIt.otf},
+]{SourceSansPro}
+
+% Define Source Sans Pro Light with explicit features
+\newfontfamily\sourcesansprolightfont[
+  Path=\@fontdir,
+  UprightFont=*-Light.otf,
+  ItalicFont=*-LightIt.otf,
+  BoldFont=*-Semibold.otf,
+  BoldItalicFont=*-SemiboldIt.otf,
+  Scale=1.0,
+  Ligatures=TeX,
+  BoldItalicFeatures={SmallCapsFont=*-SemiboldIt.otf},
+]{SourceSansPro}
+
+% Override the default font commands with our new definitions
+\renewcommand*{\bodyfont}{\sourcesansprofont}
+\renewcommand*{\bodyfontlight}{\sourcesansprolightfont}
+\renewcommand*{\footerfont}{\sourcesansprofont}
+
+% Additional language-specific settings for polyglossia
+\directlua{
+  % Enable full Unicode character support
+  fonts.handlers.otf.addfeature{
+    name = "italics",
+    type = "substitution",
+    data = {
+      ["à"] = "à",
+      ["è"] = "è",
+      ["é"] = "é",
+      ["ì"] = "ì",
+      ["ò"] = "ò",
+      ["ù"] = "ù",
+    }
+  }
+}
+
+\ifenglish
+  % English font settings
+  \setmainfont[
+    Path=\@fontdir,
+    UprightFont=SourceSansPro-Regular.otf,
+    BoldFont=SourceSansPro-Bold.otf,
+    ItalicFont=SourceSansPro-It.otf,
+    BoldItalicFont=SourceSansPro-BoldIt.otf,
+    Mapping=tex-text,
+    Ligatures=TeX
+  ]{SourceSansPro}
+\else
+  % Italian font settings with accent support
+  \setmainfont[
+    Path=\@fontdir,
+    UprightFont=SourceSansPro-Regular.otf,
+    BoldFont=SourceSansPro-Bold.otf,
+    ItalicFont=SourceSansPro-It.otf,
+    BoldItalicFont=SourceSansPro-BoldIt.otf,
+    Mapping=tex-text,
+    Ligatures=TeX,
+    Language=Italian,
+    CharacterVariant={1,3},  % Enable character variants that might help with accents
+    Contextuals=Alternate    % Enable contextual alternates
+  ]{SourceSansPro}
+\fi
