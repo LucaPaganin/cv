@@ -1,15 +1,23 @@
 %------------------------------------------------
-
+\cvsection{\ifenglish Language skills\else Lingue\fi}
+\begin{cvskills}    
+\ifenglish
 \cvskill
-{Lingue} % Category
-{Italiano (madrelingua), Inglese (B2: ascolto, lettura, produzione orale, interazione orale; B: scrittura)} % Skills
+    {Languages} % Category
+    {Italian (native), English (B2)}
+\else
+\cvskill
+    {Lingue} % Category
+    {Italiano (madrelingua), Inglese (B2)}
+\fi
+\end{cvskills}
 
 %------------------------------------------------
 %----------------------------------------------------------------------------------------
 %    SECTION TITLE
 %----------------------------------------------------------------------------------------
 
-\cvsection{Competenze Digitali}
+\cvsection{\ifenglish Digital Skills\else Competenze Digitali\fi}
 
 %----------------------------------------------------------------------------------------
 %    SECTION CONTENT
@@ -19,49 +27,60 @@
 
 %------------------------------------------------
 
+\ifenglish
+\cvskill
+{Programming Languages} % Category
+{Python, C, C++, JavaScript, HTML, Bash, CSS, C\#, PowerShell} % Skills
+\else
 \cvskill
 {Linguaggi di Programmazione} % Category
 {Python, C, C++, JavaScript, JSON, HTML, XML,\\
  Bash, CSS, Azure DevOps Pipelines} % Skills
+\fi
 
 %------------------------------------------------
 
+\ifenglish
+\cvskill
+{DevOps} % Category
+{Docker, Docker-compose, Kubernetes (basic), Azure, Azure DevOps, Terraform, Bicep} % Skills
+\else
 \cvskill
 {DevOps e Cloud} % Category
 {Docker, Docker-compose, Kubernetes (base),\\
  Azure DevOps, CI/CD, Terraform} % Skills
+\fi
 
 %------------------------------------------------
 
+\ifenglish
+\cvskill
+{Software and Tools} % Category
+{Git, GitLab, Visual Studio Code, PyCharm, Office, RabbitMQ} % Skills
+\else
 \cvskill
 {Software e Tools} % Category
 {Git, GitLab, Visual Studio, Visual Studio Code, PyCharm,\\
  Office, RabbitMQ, REST API, Teams, Skype, Zoom, Google Meet} % Skills
+\fi
 
 %------------------------------------------------
 
+\ifenglish
+\cvskill
+{Operating Systems} % Category
+{Linux, macOS, Windows, UNIX} % Skills
+\else
 \cvskill
 {Sistemi Operativi} % Category
 {Linux, Mac OSX, Windows} % Skills
+\fi
 
 %------------------------------------------------
 
 \cvskill
 {Frameworks} % Category
-{Flask, React, Next.js} % Skills
-
-%------------------------------------------------
-
-\cvskill
-{Protocolli di comunicazione} % Category
-{AMQP, RabbitMQ, MQTT, PAHO MQTT} % Skills
-
-%------------------------------------------------
-
-\cvskill
-{Competenze digitali (self-assessment)} % Category
-{Alfabetizzazione informatica e digitale: Avanzato (6/6), Comunicazione e collaborazione: Avanzato (5/6),\\
- Creazione di contenuti digitali: Avanzato (6/6), Sicurezza: Avanzato (6/6), Risoluzione dei problemi: Avanzato (6/6)} % Skills
+{Flask, React, Next.JS} % Skills
 
 %------------------------------------------------
 

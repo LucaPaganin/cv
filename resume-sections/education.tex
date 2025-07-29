@@ -11,6 +11,7 @@
 \begin{cventries}
 
 %------------------------------------------------
+% Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \ifenglish
 \cventry
 {PhD in Physics and Nanosciences} % Degree
@@ -70,19 +71,31 @@
 
 
 %------------------------------------------------
-
+\ifenglish
+\cventry
+{Bachelor of Science (BSc) in Physics} % Degree
+{University of Genoa} % Institution
+{Genoa, Italy} % Location
+{22/09/2013 -- 27/09/2016} % Date(s)
+{ % Description(s) bullet points
+    \begin{cvitems}
+    \item {Thesis: "The tunnel effect in the context of the alpha decay"}
+    \item {Final grade: 110/110 e lode}
+    \end{cvitems}
+}
+\else
 \cventry
 {Laurea Triennale in Fisica} % Degree
 {Università degli Studi di Genova} % Institution
 {Genova, Italia} % Location
 {22/09/2013 -- 27/09/2016} % Date(s)
 { % Description(s) bullet points
-\begin{cvitems}
-\item {Tesi: "The tunnel effect in the context of the alpha decay"}
-\item {Voto finale: 110/110 e lode}
-\end{cvitems}
+    \begin{cvitems}
+    \item {Tesi: "The tunnel effect in the context of the alpha decay"}
+    \item {Voto finale: 110/110 e lode}
+    \end{cvitems}
 }
-
+\fi
 %------------------------------------------------
 
 \end{cventries}
