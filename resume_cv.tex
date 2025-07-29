@@ -46,6 +46,19 @@
 \newif\ifenglish
 \englishtrue  % Set to \englishfalse for Italian
 
+% Add proper language support
+\usepackage{polyglossia}
+\ifenglish
+  \setmainlanguage{english}
+  \setotherlanguage{italian}
+\else
+  \setmainlanguage{italian}
+  \setotherlanguage{english}
+\fi
+
+% Ensure consistent font features
+\defaultfontfeatures{Ligatures=TeX, Scale=MatchLowercase}
+
 %----------------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
