@@ -1,0 +1,77 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awesome Resume/CV
+% XeLaTeX Template
+% Version 1.3 (30/3/2020)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Claud D. Park (posquit0.bj@gmail.com) with modifications by 
+% Vel (vel@latextemplates.com)
+% Modified by Luca Paganin on July 29th 2025
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template must be compiled with XeLaTeX, the below lines will ensure this
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------
+%%%%%%%%%%%%%% LANGUAGE SWITCH %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------------------------------------------------------
+% Define language switch
+\newif\ifenglish
+\englishtrue     % Uncomment for English
+% \englishfalse      % Uncomment for Italian
+%------------------------------------------------------------
+
+%------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
+
+\usepackage{preamble}
+
+\ifenglish
+\selectlanguage{english}
+\else
+\selectlanguage{italian}
+\fi
+
+%------------------------------------------------------------
+%	PERSONAL INFORMATION
+%------------------------------------------------------------
+
+\input{valentina/personal_info.tex}
+
+%------------------------------------------------------------
+
+\begin{document}
+
+\makecvheader % Print the header
+
+%------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------
+
+% Load sections with language conditional logic
+\input{valentina/resume-sections/experience.tex}
+\input{valentina/resume-sections/certifications.tex}
+\input{valentina/resume-sections/education.tex}
+\input{valentina/resume-sections/skills.tex}
+\input{valentina/resume-sections/projects.tex}
+\input{valentina/resume-sections/publications.tex}
+\input{valentina/resume-sections/conferences.tex}
+\input{valentina/resume-sections/honors.tex}
+\input{valentina/resume-sections/professional_activities.tex}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
