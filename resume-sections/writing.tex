@@ -1,36 +1,43 @@
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------
 %    SECTION TITLE
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------
 
-\cvsection{\ifenglish Publications\else Pubblicazioni\fi}
+\cvsection{
+\ifenglish 
+    Publications
+\else 
+    Pubblicazioni
+\fi
+}
 
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------
 %    SECTION CONTENT
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------
 
 \begin{cventries}
 
 %------------------------------------------------
 
-%------------------------------------------------
+% Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \cventry
-{\ifenglish Co-author\else Co-autore\fi} % Role
-{Sentient Spaces: Intelligent Totem Use Case in the ECSEL FRACTAL Project} % Title
-{2022} % Date(s)
-{ % Description(s)
-\begin{cvitems}
-  \ifenglish
-  \item {FRACTAL project: edge computing, IoT, intelligent totems for shopping malls}
-  \else
-  \item {FRACTAL project: edge computing, IoT, totem intelligente per centri commerciali}
-  \fi
-  \item {\url{https://fractal-project.eu/}}
-\end{cvitems}
+{
+    \ifenglish Co-author\else Co-autore\fi
 }
+{
+    Sentient Spaces: Intelligent Totem Use Case in the ECSEL FRACTAL Project
+}
+{L'Aquila, Italy}
+{2022}
+{
+    FRACTAL project: edge computing, IoT, intelligent totems for shopping malls. \url{https://fractal-project.eu/}
+}
+
 %------------------------------------------------
+
 \cventry
 {\ifenglish Co-author\else Co-autore\fi} % Role
 {Euclid preparation: 6x2pt analysis for Euclid main probes} % Title
+{Genoa, Italy}
 {2021} % Date(s)
 { % Description(s)
 \begin{cvitems}
@@ -41,10 +48,13 @@
   \fi
 \end{cvitems}
 }
+
 %------------------------------------------------
+
 \cventry
 {\ifenglish Co-author\else Co-autore\fi} % Role
 {Euclid: Forecasts from the void-lensing cross-correlation} % Title
+{University of Genoa, Genoa, Italy}
 {2021} % Date(s)
 { % Description(s)
 \begin{cvitems}
@@ -59,8 +69,9 @@
 \cventry
 {\ifenglish Co-author\else Co-autore\fi} % Role
 {A Proposal for Relative In-flight Flux Self-calibrations for Spectro-photometric Surveys} % Title
+{University of Genoa, Genoa, Italy}
 {2021} % Date(s)
-{ % Description(s)
+{
 \begin{cvitems}
   \ifenglish
   \item {Method for relative in-flight flux self-calibration of spectrophotometers, simulations and validation}
