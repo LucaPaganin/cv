@@ -30,12 +30,9 @@ latexmk -xelatex \
         "$MAIN_TEX_FILE"
 echo "==> Compilazione terminata."
 
-LATEXMK_EXIT_CODE=$?
-if [ $LATEXMK_EXIT_CODE -ne 0 ]; then
-    echo "==> Compilazione LaTeX fallita. Log degli errori:"
-    cat ./out/resume_cv.log | egrep "[eE]rror" | uniq
-fi
-echo "==> Compilazione terminata."
+echo "LOG ERRORI:"
+cat ./out/resume_cv.log | egrep "[eE]rror" | uniq
+
 
 # Gestione dei permessi dei file generati (importante se il container gira come root e l'host è Linux/macOS)
 # Su Docker Desktop per Windows, la gestione dei permessi è solitamente trasparente,
