@@ -19,27 +19,31 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%------------------------------------------------------------
+%----------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%------------------------------------------------------------
+%----------------------------------------------
 
-\documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv} 
+% A4 paper size by default, use 'letterpaper' for US letter
 
 \usepackage{main-preamble}
-\usepackage{translations} % Load translations for language support
+% Load translations for language support
+\usepackage{translations} 
 
 % --- CHOOSE THE LANGUAGE FOR THE ENTIRE DOCUMENT ---
 % Define the desired language here.
 % Valid options are: italian, french, english
-\def\MyLanguage{english}
+\def\english{english}
+\def\italian{italian}
+\def\french{french}
+
+\def\MyLanguage{\english}
 
 % --- CONDITIONAL LANGUAGE SETUP ---
 % This block uses an 'if' structure to set the final document language
 % based on the value of \MyLanguage. This adds flexibility.
-\def\italian{italian}
-\def\french{french}
 
 \ifx\MyLanguage\italian
     \newcommand{\DocumentLanguage}{italian}
@@ -61,13 +65,13 @@
 
 \usepackage{custom-cv-commands}
 
-%------------------------------------------------------------
+%----------------------------------------------
 %	PERSONAL INFORMATION
-%------------------------------------------------------------
+%----------------------------------------------
 
 \input{luca/personal_info.tex}
 
-%------------------------------------------------------------
+%----------------------------------------------
 
 \begin{document}
 
