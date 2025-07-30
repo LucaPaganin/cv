@@ -2,9 +2,20 @@
 %    Skills Section for Valentina Piccolo
 %------------------------------------------------
 
+
 \cvsection{
-    \ifenglish{Languages}
-    \else{Lingue}
+	\ifenglish{Skills}
+	\else{Competenze}
+	\fi
+}
+
+
+%------------------------------------------------
+%    Language Skills
+%------------------------------------------------
+\cvsubsection{
+    \ifenglish{Language Skills}
+    \else{Competenze Linguistiche}
     \fi
 }
 
@@ -14,25 +25,23 @@
 \end{itemize}
 
 
-\cvsection{
-	\ifenglish{Professional skills}
-	\else{Competenze professionali}
-	\fi
+%------------------------------------------------
+%    Accounting and administrative skills
+%------------------------------------------------
+
+\cvsubsection{
+    \ifenglish{Accounting and Administrative Skills}
+    \else{Competenze Contabili e Amministrative}
+    \fi
 }
 
 \begin{cvskills}
-
-    \cvskill
-    {\ifenglish{Languages}\else{Lingue}\fi}
-    {\ifenglish{Italian (native), English (B1)}\else{Italiano (madrelingua), Inglese (B1)}\fi}
-
     \cvskill
     {\ifenglish{Accounting}\else{Attività contabili}\fi}
-    {\ifenglish{Bookkeeping, invoice management, financial records}\else{Registrazione fatture, gestione registri contabili}\fi}
-
-    \cvskill
-    {\ifenglish{Legal consulting}\else{Consulenza legale}\fi}
-    {\ifenglish{GDPR, contracts, compliance, privacy, anti-money laundering}\else{GDPR, contratti, compliance, privacy, antiriciclaggio}\fi}
+    {
+        \ifenglish{Bookkeeping, invoice management, financial records, ordinary accounting, foreign invoicing}
+        \else{Registrazione fatture, gestione registri contabili, fatture estere}\fi
+    }
 
     \cvskill
     {\ifenglish{Administrative documentation management}\else{Gestione documentazione amministrativa}\fi}
@@ -63,34 +72,94 @@
     {\ifenglish{Debt collection, credit management}\else{Gestione crediti, recupero debiti}\fi}
     
 
-    % --- General Skills ---
-    \cvskill{\ifenglish{Citizenship procedures}\else{Procedimenti di cittadinanza}\fi}{\ifenglish{Italian citizenship process, data verification}\else{Procedura cittadinanza italiana, verifica dati}\fi}
-    \cvskill{\ifenglish{Communication with public entities}\else{Comunicazione con enti pubblici}\fi}{\ifenglish{Correspondence, interaction with institutions}\else{Corrispondenza, interazione con istituzioni}\fi}
-    \cvskill{\ifenglish{Archiving and digitization of documents}\else{Archivio e digitalizzazione atti}\fi}{\ifenglish{Document archiving, digitalization}\else{Archiviazione documenti, digitalizzazione}\fi}
-    \cvskill{\ifenglish{Ordinary accounting}\else{Contabilità ordinaria}\fi}{\ifenglish{Bookkeeping, invoice management}\else{Registrazione fatture, gestione contabilità}\fi}
-    \cvskill{\ifenglish{Tax and social security compliance}\else{Adempimenti fiscali e previdenziali}\fi}{\ifenglish{Tax and social security compliance}\else{Adempimenti fiscali e previdenziali}\fi}
-    \cvskill{\ifenglish{Extraordinary operations}\else{Operazioni straordinarie}\fi}{\ifenglish{Extraordinary operations}\else{Operazioni straordinarie}\fi}
-    \cvskill{\ifenglish{Company board minutes}\else{Verbali organi societari}\fi}{\ifenglish{Drafting minutes}\else{Redazione verbali}\fi}
-    \cvskill{\ifenglish{ESG}\else{ESG}\fi}{\ifenglish{Environmental, Social, Governance}\else{Ambiente, Sociale, Governance}\fi}
-    \cvskill{\ifenglish{Organizational Models 231}\else{Modelli Organizzativi 231}\fi}{\ifenglish{Compliance with Legislative Decree 231}\else{Compliance Decreto 231}\fi}
-    \cvskill{\ifenglish{Anti-money laundering regulations}\else{Normativa antiriciclaggio}\fi}{\ifenglish{AML compliance}\else{Compliance antiriciclaggio}\fi}
-    \cvskill{\ifenglish{DPO}\else{DPO}\fi}{\ifenglish{Data Protection Officer}\else{Responsabile protezione dati}\fi}
-    \cvskill{\ifenglish{Regulatory compliance}\else{Compliance normativa}\fi}{\ifenglish{Regulatory compliance}\else{Compliance normativa}\fi}
-    \cvskill{\ifenglish{Tender bids}\else{Gare d'appalto}\fi}{\ifenglish{Bid preparation, documentation}\else{Preparazione gare, documentazione}\fi}
-    \cvskill{\ifenglish{Communication}\else{Comunicazione}\fi}{\ifenglish{Written and verbal communication}\else{Comunicazione scritta e verbale}\fi}
-    \cvskill{\ifenglish{Invoicing}\else{Fatturazione}\fi}{\ifenglish{Invoice management}\else{Gestione fatture}\fi}
-    \cvskill{\ifenglish{Tax regulations}\else{Normativa fiscale}\fi}{\ifenglish{Tax regulations}\else{Normativa fiscale}\fi}
-    \cvskill{\ifenglish{Credit recovery}\else{Recupero crediti}\fi}{\ifenglish{Debt collection, credit management}\else{Gestione crediti, recupero debiti}\fi}
-    \cvskill{\ifenglish{Secretarial work}\else{Segreteria}\fi}{\ifenglish{Secretarial tasks}\else{Attività di segreteria}\fi}
-    \cvskill{\ifenglish{Foreign invoicing}\else{Fatturazione estera}\fi}{\ifenglish{Foreign invoice management}\else{Gestione fatture estere}\fi}
-    \cvskill{\ifenglish{General accounting}\else{Contabilità generale}\fi}{\ifenglish{General accounting}\else{Contabilità generale}\fi}
-    \cvskill{\ifenglish{Administration}\else{Amministrazione}\fi}{\ifenglish{Office administration}\else{Amministrazione d'ufficio}\fi}
-    \cvskill{\ifenglish{GDPR}\else{GDPR}\fi}{\ifenglish{General Data Protection Regulation}\else{Regolamento generale sulla protezione dei dati}\fi}
-    \cvskill{\ifenglish{Planning}\else{Pianificazione}\fi}{\ifenglish{Planning}\else{Pianificazione}\fi}
-    \cvskill{\ifenglish{Problem solving}\else{Problem solving}\fi}{\ifenglish{Problem solving}\else{Problem solving}\fi}
-    \cvskill{\ifenglish{Teamwork}\else{Lavoro di squadra}\fi}{\ifenglish{Teamwork}\else{Lavoro di squadra}\fi}
+    \cvskill
+    {\ifenglish{Communication with public entities}\else{Comunicazione con enti pubblici}\fi}
+    {\ifenglish{Correspondence, interaction with institutions}\else{Corrispondenza, interazione con istituzioni}\fi}
+
+    \cvskill
+    {\ifenglish{Archiving and digitization of documents}\else{Archivio e digitalizzazione atti}\fi}
+    {\ifenglish{Document archiving, digitalization}\else{Archiviazione documenti, digitalizzazione}\fi}
+
+    \cvskill
+    {\ifenglish{ESG}\else{ESG}\fi}
+    {\ifenglish{Environmental, Social, Governance}\else{Ambiente, Sociale, Governance}\fi}
+    
+    \cvskill
+    {\ifenglish{Tender bids}\else{Gare d'appalto}\fi}
+    {\ifenglish{Bid preparation, documentation}\else{Preparazione gare, documentazione}\fi}
+    
+    \cvskill{\ifenglish
+    {Tax regulations}\else{Normativa fiscale}\fi}
+    {\ifenglish{Tax regulations}\else{Normativa fiscale}\fi}
+
 \end{cvskills}
 
+
+%------------------------------------------------------------
+% Legal Skills Section
+%------------------------------------------------------------
+
+\cvsubsection{
+    \ifenglish{Legal Skills}
+    \else{Competenze Legali}
+    \fi
+}
+
+\begin{cvskills}
+    
+    \cvskill
+    {\ifenglish{Legal consulting}\else{Consulenza legale}\fi}
+    {
+        \ifenglish{GDPR, contracts, compliance, privacy, anti-money laundering}
+        \else{GDPR, contratti, compliance, privacy, antiriciclaggio}\fi
+    }
+
+    \cvskill
+    {\ifenglish{Organizational Models 231}\else{Modelli Organizzativi 231}\fi}
+    {\ifenglish{Compliance with Legislative Decree 231}\else{Compliance Decreto 231}\fi}
+
+    \cvskill
+    {\ifenglish{Anti-money laundering regulations}\else{Normativa antiriciclaggio}\fi}
+    {\ifenglish{AML compliance}\else{Compliance antiriciclaggio}\fi}
+
+    \cvskill
+    {DPO}
+    {\ifenglish{Data Protection Officer}\else{Responsabile protezione dati}\fi}
+    
+    \cvskill
+    {\ifenglish{Regulatory compliance}\else{Compliance normativa}\fi}
+    {\ifenglish{Regulatory compliance}\else{Compliance normativa}\fi}
+
+    \cvskill
+    {\ifenglish{Company board minutes}\else{Verbali organi societari}\fi}
+    {\ifenglish{Drafting minutes}\else{Redazione verbali}\fi}
+
+\end{cvskills}
+
+
+%------------------------------------------------------------
+% Soft Skills Section
+%------------------------------------------------------------
+\cvsubsection{Soft Skills}
+
+\begin{cvskills}
+    \cvskill
+    {\ifenglish{Planning}\else{Pianificazione}\fi}
+    {\ifenglish{Planning}\else{Pianificazione, organizzazione}\fi}
+
+    \cvskill
+    {\ifenglish{Problem solving}\else{Problem solving}\fi}
+    {\ifenglish{Problem solving}\else{Soluzione di problemi, attitudine a imparare velocemente}\fi}
+
+    \cvskill
+    {\ifenglish{Teamwork}\else{Lavoro di squadra}\fi}
+    {\ifenglish{Teamwork}\else{Lavoro di squadra}\fi}
+\end{cvskills}
+
+
+%------------------------------------------------------------
+% Digital Skills Section
+%------------------------------------------------------------
 \cvsection{
 	\ifenglish{Digital Skills}
 	\else{Competenze Digitali}
@@ -98,6 +167,15 @@
 }
 
 \begin{cvskills}
-    \cvskill{\ifenglish{Teamsystem}\else{Teamsystem}\fi}{\ifenglish{Teamsystem software usage}\else{Utilizzo Teamsystem}\fi}
-    \cvskill{\ifenglish{Microsoft Office}\else{Microsoft Office}\fi}{\ifenglish{Word, Excel, PowerPoint, Outlook}\else{Word, Excel, PowerPoint, Outlook}\fi}
+    \cvskill
+    {Teamsystem}
+    {
+        \ifenglish{Teamsystem software usage for invoice registration}
+        \else{Utilizzo Teamsystem per la registrazione delle fatture}
+        \fi
+    }
+
+    \cvskill
+    {Microsoft Office}
+    {Word, Excel, PowerPoint, Outlook}
 \end{cvskills}
