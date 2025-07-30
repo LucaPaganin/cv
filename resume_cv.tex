@@ -41,6 +41,18 @@
 
 \def\MyLanguage{\english}
 
+%----------------------------------------------
+%	PERSONAL INFORMATION
+%----------------------------------------------
+
+\input{luca/personal_info.tex}
+
+%----------------------------------------------
+
+\begin{document}
+
+% --- SET THE LANGUAGE ---
+% This command is now called only once at the beginning.
 % --- CONDITIONAL LANGUAGE SETUP ---
 % This block uses an 'if' structure to set the final document language
 % based on the value of \MyLanguage. This adds flexibility.
@@ -59,21 +71,10 @@
     \fi
 \fi
 
-% --- SET THE LANGUAGE ---
-% This command is now called only once at the beginning.
 \SetLanguage{\DocumentLanguage}
 
-\usepackage{custom-cv-commands}
-
-%----------------------------------------------
-%	PERSONAL INFORMATION
-%----------------------------------------------
-
-\input{luca/personal_info.tex}
-
-%----------------------------------------------
-
-\begin{document}
+\input{translations}
+\input{custom-cv-commands}
 
 \makecvheader
 

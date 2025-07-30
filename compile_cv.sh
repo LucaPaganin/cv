@@ -2,6 +2,12 @@
 # Uscire immediatamente se un comando fallisce
 set -e
 
+rm -rf out/
+
+function print_log() {
+    cat ./out/resume_cv.log | egrep "[eE]rror" | uniq
+}
+
 # File TeX principale da compilare (default a resume_cv.tex se non specificato come argomento)
 MAIN_TEX_FILE=${1:-resume_cv.tex}
 PDF_FILE=$(basename "$MAIN_TEX_FILE" .tex).pdf
