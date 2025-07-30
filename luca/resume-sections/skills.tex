@@ -8,45 +8,26 @@
   \fi
 }
 
+%----------------------------------------------------------------------------------------
+% TECH STACK
+%----------------------------------------------------------------------------------------
+\input{luca/resume-sections/subsection_techstack.tex}
+
+
+\cvsubsection{
+  \ifenglish{Language Skills}
+  \else{Competenze Linguistiche}
+  \fi
+}
+
 \begin{cvskills}
 
 \cvskill
-{\ifenglish{Languages}\else{Lingue}\fi}
-{\ifenglish{Italian (native), English (B2)}\else{Italiano (madrelingua), Inglese (B2)}\fi} % Skills
+{\ifenglish{Italian}\else{Italiano}\fi}
+{\ifenglish{mother tongue}\else{madrelingua}\fi}
 
 \cvskill
-{\ifenglish Programming Languages\else Linguaggi di Programmazione\fi}
-{Python, C++, JavaScript, HTML, Bash, CSS, C\#, PowerShell, LaTeX}
-
-
-\cvskill
-{Frameworks} % Category
-{Flask, React, Next.JS} % Skills
-
-\cvskill
-{DevOps} % Category
-{Docker, Docker-compose, Kubernetes, Helm, Azure DevOps, Terraform, Bicep} % Skills
-
-\cvskill
-{Cloud Platforms} % Category
-{Microsoft Azure, Heroku, DigitalOcean} % Skills
-
-\cvskill
-{Data Analysis} % Category
-{Pandas, NumPy, Matplotlib, Seaborn, Plotly, Dash, Streamlit, PowerBI} % Skills
-
-%------------------------------------------------
-
-\cvskill
-{Software and Tools} % Category
-{Git, Visual Studio Code, PyCharm, Notion, Postman} % Skills
-
-%------------------------------------------------
-
-\cvskill
-{\ifenglish Operating Systems\else Sistemi Operativi\fi} % Category
-{Linux, Mac OSX, Windows} % Skills
-
-%------------------------------------------------
+{\ifenglish{English}\else{Inglese}\fi}
+{B2 (FCE)}
 
 \end{cvskills}
