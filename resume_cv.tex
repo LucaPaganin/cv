@@ -22,27 +22,44 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %------------------------------------------------------------
-%%%%%%%%%%%%%% LANGUAGE SWITCH %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%------------------------------------------------------------
-% Define language switch
-\newif\ifenglish
-\englishtrue     % Uncomment for English
-% \englishfalse      % Uncomment for Italian
-%------------------------------------------------------------
-
-%------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %------------------------------------------------------------
 
 \documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
 
-\usepackage{preamble}
+\usepackage{main-preamble}
+\usepackage{translations} % Load translations for language support
 
-\ifenglish
-\selectlanguage{english}
+% --- CHOOSE THE LANGUAGE FOR THE ENTIRE DOCUMENT ---
+% Define the desired language here.
+% Valid options are: italian, french, english
+\def\MyLanguage{english}
+
+% --- CONDITIONAL LANGUAGE SETUP ---
+% This block uses an 'if' structure to set the final document language
+% based on the value of \MyLanguage. This adds flexibility.
+\def\italian{italian}
+\def\french{french}
+
+\ifx\MyLanguage\italian
+    \newcommand{\DocumentLanguage}{italian}
+    \selectlanguage{italian}
 \else
-\selectlanguage{italian}
+    \ifx\MyLanguage\french
+        \newcommand{\DocumentLanguage}{french}
+        \selectlanguage{french}
+    \else
+        % Default to English if the choice is not recognized
+        \newcommand{\DocumentLanguage}{english}
+        \selectlanguage{english}
+    \fi
 \fi
+
+% --- SET THE LANGUAGE ---
+% This command is now called only once at the beginning.
+\SetLanguage{\DocumentLanguage}
+
+\usepackage{custom-cv-commands}
 
 %------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -54,7 +71,7 @@
 
 \begin{document}
 
-\makecvheader % Print the header
+\makecvheader
 
 %------------------------------------------------------------
 %	CV/RESUME CONTENT

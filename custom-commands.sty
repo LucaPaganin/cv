@@ -1,0 +1,22 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{custom-cv-commands}[2025/07/30 Luca Paganin cv custom commands]
+
+%------------------------------------------------------------
+% Global variables for bilingual content
+%------------------------------------------------------------
+% Locations
+\def\genoaLoc{\ifenglish{Genoa, Italy}\else{Genova, Italia}\fi}
+\def\savonaLoc{\ifenglish{Savona, Italy}\else{Savona, Italia}\fi}
+% Organizations
+\def\unigeOrg{\ifenglish{University of Genoa, Italy}\else{Università degli Studi di Genova, Italia}\fi}
+%------------------------------------------------------------
+
+
+%------------------------------------------------------------
+% new and renew commands
+%------------------------------------------------------------
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
+
+\newcommand{\toverify}{\textcolor{red}{(TO VERIFY)}}
+
+%------------------------------------------------------------

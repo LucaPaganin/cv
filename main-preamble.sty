@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{preamble}[2025/07/29 Luca Paganin awesome-cv custom preamble]
+\ProvidesPackage{main-preamble}[2025/07/29 Luca Paganin awesome-cv custom preamble]
 
 %------------------------------------------------------------
 % packages and geometry
@@ -36,25 +36,4 @@
 %\definecolor{lighttext}{HTML}{414141}
 %------------------------------------------------------------
 
-%------------------------------------------------------------
-% Global variables for bilingual content
-%------------------------------------------------------------
-% Locations
-\def\genoaLoc{\ifenglish{Genoa, Italy}\else{Genova, Italia}\fi}
-\def\savonaLoc{\ifenglish{Savona, Italy}\else{Savona, Italia}\fi}
-% Organizations
-\def\unigeOrg{\ifenglish{University of Genoa, Italy}\else{Università degli Studi di Genova, Italia}\fi}
-\def\msAuthority{Microsoft}
-\def\msCertified{Microsoft Certified}
-%------------------------------------------------------------
-
-
-%------------------------------------------------------------
-% new and renew commands
-%------------------------------------------------------------
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
-
-\newcommand{\toverify}{\textcolor{red}{(TO VERIFY)}}
-
-%------------------------------------------------------------
 \endinput

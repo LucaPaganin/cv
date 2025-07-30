@@ -1,98 +1,59 @@
 \cvsection{
-  \ifenglish{Professional Experience}
-  \else{Esperienze professionali}
-  \fi
+  \transl{sec-job-experience}
 }
 
 \begin{cventries}
 
 %------------------------------------------------
-% Usage: \cventry[<url>]{<position>}{<title>}{<location>}{<date>}{<description>}
-
+% RINA job descriptions
+%------------------------------------------------
 \cventry[https://www.rina.org/]
 {Cloud Backend Developer} % Job title
 {RINA S.p.A.} % Organization
 {\genoaLoc} % Location
-{\ifenglish{Nov. 2024 -- Present}\else{Nov. 2024 -- Presente}\fi} % Date(s)
+{\transl{tim-nov} 2024 -- \transl{tim-present}} % Date(s)
 { % Description(s) of tasks/responsibilities
-\begin{cvitems}
-  \item {
-    \ifenglish{Responsible for developing a serverless Python backend on Azure Functions for RINA's digital certification platform, primarily serving steel mill clients to certify their environmental sustainability efforts.}
-    \else{Mi occupo dello sviluppo del backend serverless in Python su Azure Functions per la piattaforma di certificazione digitale di RINA, rivolta principalmente alle acciaierie clienti che vogliono certificare il loro impegno di sostenibilità ambientale.}
-    \fi
-  }
-\end{cvitems}
+  {\transl{job-rina-desc}}
 }
 
 %------------------------------------------------
-
+% Rulex job descriptions
+%------------------------------------------------
 \cventry[https://www.rulex.ai/]
 {Junior Full Stack Developer} % Job title
-{Rulex Innovation Labs s.r.l..} % Organization
+{Rulex Innovation Labs s.r.l.} % Organization
 {\genoaLoc} % Location
-{Nov. 2021 -- Oct. 2024} % Date(s)
+{\transl{tim-nov} 2021 -- \transl{tim-oct} 2024} % Date(s)
 { % Description(s) of tasks/responsibilities
-\begin{cvitems}
-  \item{
-    \ifenglish{As part of the software development team, handled inter-service messaging, REST API implementation, and DevOps activities, and built/maintained the CLI for the Rulex Platform.}
-    \else{Come parte del team di sviluppo software, mi sono occupato della messaggistica tra microservizi, implementazione di API REST e attività DevOps. Ho anche costruito e mantenuto l'interfaccia da riga di comando (CLI) per il software Rulex Platform.}
-    \fi
-  }
-  \item{
-    \ifenglish{Built and maintained CI/CD pipelines using Azure DevOps Pipelines.}
-    \else{Costruzione e mantenimento di pipeline CI/CD con Azure DevOps Pipelines.}
-    \fi
-  }
-  \item{
-    \ifenglish{Deployed and tested cloud infrastructure with Terraform and Kubernetes.}
-    \else{Deployment e testing dell'infrastruttura cloud utilizzando Terraform e Kubernetes.}
-    \fi
-  }
-  \item{
-    \ifenglish{Developed primarily in Python and JavaScript (Node.js and React), including C++ plugins invoked from Python.}
-    \else{Ho sviluppato principalmente in Python e JavaScript (Node.js e React), con qualche plugin in C++ chiamato da Python.}
-    \fi
-  }
-\end{cvitems}
+  \transl{job-rulex-desc1} 
+  \transl{job-rulex-desc2} 
+  \transl{job-rulex-desc3} 
+  \transl{job-rulex-desc4}
 }
 
 %------------------------------------------------    
-
 % University Teaching Assistant role
-\cventry{\ifenglish{University Teaching Assistant}\else{Esercitatore universitario}\fi} % Job title
-{\unigeOrg} % Organization
-{\genoaLoc} % Location
-{Sep. 2019 -- Sep. 2021} % Date(s)
+%------------------------------------------------    
+\cventry{\transl{job-unige-ta-title}} % Job title
+{\transl{org-unige}} % Organization
+{\transl{loc-genoa}} % Location
+{\transl{tim-sep} 2019 -- \transl{tim-sep} 2021} % Date(s)
 { % Description(s)
 \begin{cvitems}
-  \item {
-    \ifenglish{Delivered lectures and guided exercises for the General Physics course aimed at Chemical and Electrical Engineering students.}
-    \else{Lezioni frontali e esercitazioni guidate per il corso di Fisica Generale rivolto agli studenti di Ingegneria Chimica ed Elettrica.}
-    \fi
-  }
+  \item {\transl{job-unige-ta-desc}}
 \end{cvitems}
 }
 
 %------------------------------------------------
-
 % University Tutor role
-\cventry{\ifenglish{University Tutor}\else{Tutor universitario}\fi} % Job title
+%------------------------------------------------
+\cventry{\transl{job-unige-tutor-title}} % Job title
 {\unigeOrg} % Organization
 {\genoaLoc} % Location
-{Sep. 2017 -- Sep. 2018} % Date(s)
+{\transl{tim-sep} 2017 -- \transl{tim-sep} 2018} % Date(s)
 { % Description(s)
-\begin{cvitems}
-  \item {
-    \ifenglish{Academic tutoring for General Physics, Mathematical Analysis, and Linear Algebra for first-year students in Physics and Mathematics degree courses.}
-    \else{Tutorato didattico per Fisica Generale, Analisi Matematica e Algebra Lineare per studenti del primo anno dei corsi di Laurea in Fisica e Matematica.}
-    \fi
-  }
-  \item {
-    \ifenglish{Development of communication and interpersonal skills through student support.}
-    \else{Sviluppo di competenze comunicative e relazionali attraverso il supporto agli studenti.}
-    \fi
-  }
-\end{cvitems}
+  {\transl{job-unige-tutor-desc1}}
+  {\transl{job-unige-tutor-desc2}}
 }
 
 %------------------------------------------------
