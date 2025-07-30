@@ -4,10 +4,6 @@ set -e
 
 rm -rf out/
 
-function print_log() {
-    cat ./out/resume_cv.log | egrep "[eE]rror" | uniq
-}
-
 # File TeX principale da compilare (default a resume_cv.tex se non specificato come argomento)
 MAIN_TEX_FILE=${1:-resume_cv.tex}
 PDF_FILE=$(basename "$MAIN_TEX_FILE" .tex).pdf
@@ -32,7 +28,13 @@ latexmk -xelatex \
         -file-line-error \
         -output-directory=out \
         "$MAIN_TEX_FILE"
+echo "==> Compilazione terminata."
 
+LATEXMK_EXIT_CODE=$?
+if [ $LATEXMK_EXIT_CODE -ne 0 ]; then
+    echo "==> Compilazione LaTeX fallita. Log degli errori:"
+    cat ./out/resume_cv.log | egrep "[eE]rror" | uniq
+fi
 echo "==> Compilazione terminata."
 
 # Gestione dei permessi dei file generati (importante se il container gira come root e l'host è Linux/macOS)

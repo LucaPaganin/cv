@@ -30,7 +30,16 @@
 
 \usepackage{main-preamble}
 % Load translations for language support
-\usepackage{translations} 
+\usepackage{cv-translations}
+
+
+
+%----------------------------------------------
+%	CUSTOM COMMANDS
+%----------------------------------------------
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} 
+% If you would like to change the social information separator from a pipe (|) to something else
+\newcommand{\toverify}{\textcolor{red}{(TO VERIFY)}}
 
 % --- CHOOSE THE LANGUAGE FOR THE ENTIRE DOCUMENT ---
 % Define the desired language here.
@@ -73,7 +82,6 @@
 
 \SetLanguage{\DocumentLanguage}
 
-\input{translations}
 \input{custom-cv-commands}
 
 \makecvheader
