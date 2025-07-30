@@ -15,13 +15,13 @@ Attività Contabili: registrazione fatture attive e passive
 Operazioni Estere: autofattura e integrazione
 Recupero Crediti
 Gestione dei formulari dei rifiuti di carico e scarico
-Bandi gare d’appalto
+Bandi gare d'appalto
 Gestione della documentazione contrattuale
 
 ## CONSULENTE LEGALE – 11/07/2024 – 31/01/
 
 Assistenza al cliente nelle procedure di adeguamento al GDPR
-Predisposizione di atti di contratto funzionali all’attività di DPO presso le società clienti e auditor privacy
+Predisposizione di atti di contratto funzionali all'attività di DPO presso le società clienti e auditor privacy
 Tematiche in tema di antiriciclaggio,
 Redazione modelli 231 per le imprese
 
@@ -57,9 +57,9 @@ cittadinanza e inserimento all'interno della piattaforma digitale delle notifich
 
 ###  ATHENA SRL – SAVONA, ITALIA
 
-###  ADOS S.R.L – GENOVA, ITALIA
+###  ADOS s.r.l. – GENOVA, ITALIA
 
-###  STUDIO FC & PARTNERS S.R.L. – GENOVA, ITALIA
+###  STUDIO FC & PARTNERS s.r.l.. – GENOVA, ITALIA
 
 ###  PREFETTURA DELLA CITTÀ DI ALESSANDRIA – ALESSANDRIA, ITALIA
 
@@ -97,7 +97,7 @@ per la Previdenza Sociale (INPS). In questa attività mi sono occupata di:
 
 **Sito Internet** https://unige.it **Voto finale** 98 **Numero di crediti** 300
 
-**Tesi** Le novità penalistiche del Codice della Crisi d’impresa
+**Tesi** Le novità penalistiche del Codice della Crisi d'impresa
 
 01/09/2009 – 01/09/2014 Savona, Italia
 
@@ -126,7 +126,7 @@ _Livelli: A1 e A2: Livello elementare B1 e B2: Livello intermedio C1 e C2: Livel
 
 ## Corso Reporting di sostenibilità, Social e Welfare aziendale e Comunicazione
 
-## Corso Gli strumenti di regolazione della crisi e dell’insolvenza
+## Corso Gli strumenti di regolazione della crisi e dell'insolvenza
 
 ###  INPS – SAVONA, ITALIA
 
@@ -139,7 +139,7 @@ _Livelli: A1 e A2: Livello elementare B1 e B2: Livello intermedio C1 e C2: Livel
 ## PATENTE DI GUIDA
 
 
-_Autorizzo il trattamento dei miei dati personali presenti nel CV ai sensi dell’art. 13 d. lgs. 30 giugno 2003 n. 196 - “Codice in
-materia di protezione dei dati personali” e dell’art. 13 GDPR 679/16 - “Regolamento europeo sulla protezione dei dati personali”._
+_Autorizzo il trattamento dei miei dati personali presenti nel CV ai sensi dell'art. 13 d. lgs. 30 giugno 2003 n. 196 - “Codice in
+materia di protezione dei dati personali” e dell'art. 13 GDPR 679/16 - “Regolamento europeo sulla protezione dei dati personali”._
 
 
