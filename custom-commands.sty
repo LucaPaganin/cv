@@ -7,4 +7,22 @@
 \def\faRobot{\faCog}
 \def\faTools{\faWrench}
 
+% Redefine cvsection to prevent page breaks after section titles
+\renewcommand{\cvsection}[1]{%
+  \vspace{\acvSectionTopSkip}
+  \sectionstyle{#1}
+  \phantomsection
+  \color{gray}\vhrulefill{0.9pt}
+  \nopagebreak[4]
+}
+
+% Redefine cvsubsection to prevent page breaks after subsection titles
+\renewcommand{\cvsubsection}[1]{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-3mm}
+  \subsectionstyle{#1}
+  \phantomsection
+  \nopagebreak[4]
+}
+
 \endinput
