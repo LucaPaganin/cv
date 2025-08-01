@@ -32,55 +32,42 @@
 % Load translations for language support
 \usepackage{cv-translations}
 
-
-
-%----------------------------------------------
-%	CUSTOM COMMANDS
-%----------------------------------------------
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-% If you would like to change the social information separator from a pipe (|) to something else
-\newcommand{\toverify}{\textcolor{red}{(TO VERIFY)}}
-
-% --- CHOOSE THE LANGUAGE FOR THE ENTIRE DOCUMENT ---
-% Define the desired language here.
-% Valid options are: italian, french, english
-\def\english{english}
-\def\italian{italian}
-\def\french{french}
-
-\def\MyLanguage{\english}
-
 %----------------------------------------------
 %	PERSONAL INFORMATION
 %----------------------------------------------
 
 \input{luca/personal_info.tex}
 
-%----------------------------------------------
+%------------------------------------------------------------
+% Language-specific conditionals
+%------------------------------------------------------------
+% --- CHOOSE THE LANGUAGE FOR THE ENTIRE DOCUMENT ---
+\def\CVLanguage{\Italian}
+
+\newif\ifenglish
+\newif\ifitalian
+
+\ifthenelse{\equal{\CVLanguage}{\English}}{
+    \englishtrue
+    \italianfalse
+}{
+    \ifthenelse{\equal{\CVLanguage}{\Italian}}{
+        \englishfalse
+        \italiantrue
+    }{
+        \englishfalse
+        \italianfalse
+    }
+}
+
+
+\ifitalian
+    \LoadDictionaryFor{italian}{basic}
+\fi
 
 \begin{document}
 
-% --- SET THE LANGUAGE ---
-% This command is now called only once at the beginning.
-% --- CONDITIONAL LANGUAGE SETUP ---
-% This block uses an 'if' structure to set the final document language
-% based on the value of \MyLanguage. This adds flexibility.
-
-\ifx\MyLanguage\italian
-    \newcommand{\DocumentLanguage}{italian}
-    \selectlanguage{italian}
-\else
-    \ifx\MyLanguage\french
-        \newcommand{\DocumentLanguage}{french}
-        \selectlanguage{french}
-    \else
-        % Default to English if the choice is not recognized
-        \newcommand{\DocumentLanguage}{english}
-        \selectlanguage{english}
-    \fi
-\fi
-
-% \SetLanguage{\DocumentLanguage}
+\selectlanguage{\CVLanguage}
 
 \makecvheader
 
@@ -89,10 +76,8 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------
 
-% \Translate{$loc_genoa}
-
 % Load sections with language conditional logic
-% \input{luca/resume-sections/experience.tex}
+\input{luca/resume-sections/experience.tex}
 % \input{luca/resume-sections/certifications.tex}
 % \input{luca/resume-sections/education.tex}
 % \input{luca/resume-sections/tech/tech.tex}

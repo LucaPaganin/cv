@@ -88,6 +88,7 @@
   pdfsubject={},
   pdfkeywords={}
 }
+\RequirePackage{translations}
 
 
 %-------------------------------------------------------------------------------
