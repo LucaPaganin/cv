@@ -5,6 +5,7 @@
 }
 
 \cvsubsection{
+  \faCode \,
   \ifenglish{Programming Languages and Frameworks}
   \else{Linguaggi di Programmazione e Frameworks}
   \fi
@@ -12,7 +13,7 @@
 
 \begin{cvskills}
   \cvskill{Python}
-  {Flask, Dash, Streamlit}
+  {General proficiency, frameworks: flask, dash, streamlit, tornado, fastapi}
 
   \cvskill{JavaScript}
   {React, Next.JS, Node.JS}
@@ -21,20 +22,24 @@
   {TeXLive, overleaf}
 
   \cvskill{C++}
-  {}
+  {Basic usage, OOP and standard library templates}
 
   \cvskill{C\#}
-  {}
+  {Basic usage, .NET framework}
 
   \cvskill{PowerShell}
-  {}
+  {Advanced scripting and automations, custom modules and classes}
 
   \cvskill{Bash}
-  {}
+  {Basic usage and knowledge of main commands including: `awk', `sed', `cut', `grep', `find', `xargs'}
 
 \end{cvskills}
 
+% Add divider
+\cvsectiondivider[0.5\textwidth]
+
 \cvsubsection{
+  \faDatabase\,
   \ifenglish{Databases}
   \else{Database}
   \fi
@@ -51,22 +56,44 @@
 
 \end{cvskills}
 
-\cvsubsection{AI}
+% Add divider
+\cvsectiondivider[0.5\textwidth]
+
+\cvsubsection{\faLightbulbO \, AI Tools, LLMs and Agents}
 
 \begin{cvskills}
     \cvskill
     {ChatGPT}
     {For general tasks and problems}
+
+    \cvskill
+    {Claude}
+    {First choice for writing and coding}
+
+    \cvskill
+    {Perplexity}
+    {Web search and investigation on new topics}
+
+    \cvskill
+    {Gemini}
+    {Deep research, OCR, quick coding}
+
+    \cvskill
+    {NotebookLM}
+    {Study, RAG on-the-fly}
     
     \cvskill
     {GitHub Copilot}
-    {For coding (no vibecoding)}
+    {For coding}
 
 
 
 \end{cvskills}
 
-\cvsubsection{Devops \& Cloud}
+% Add divider
+\cvsectiondivider[0.5\textwidth]
+
+\cvsubsection{\faCloud \, Devops \& Cloud}
 
 \begin{cvskills}
 
@@ -85,8 +112,10 @@
 % OTHER
 %------------------------------------------------
 
+% Add divider
+\cvsectiondivider[0.5\textwidth]
 
-\cvsubsection{Other}
+\cvsubsection{\faWrench\ Other}
 
 \begin{cvskills}
 \cvskill
@@ -102,6 +131,6 @@
 %------------------------------------------------
 
 \cvskill
-{\ifenglish Operating Systems\else Sistemi Operativi\fi} % Category
+{\GetTranslation{skl-os}} % Category
 {Linux, Mac OSX, Windows} % Skills
 \end{cvskills}

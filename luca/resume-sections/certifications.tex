@@ -1,12 +1,10 @@
-%----------------------------------------------------------------------------------------
-%    SECTION TITLE
-%----------------------------------------------------------------------------------------
-
-\cvsection{
-  \ifenglish{Professional Certifications}
-  \else{Certificazioni Professionali}
+\ifenglish
+  \cvsection{Professional Certifications}
+\else
+  \ifitalian
+    \cvsection{Certificazioni Professionali}
   \fi
-}
+\fi
 
 %----------------------------------------------------------------------------------------
 %    SECTION CONTENT
@@ -23,14 +21,10 @@
 {Microsoft Certified} % Category
 {AZ-900: Azure Fundamentals} % Certification
 {Microsoft} % Authority
-{Feb 2025} % Date
+{\GetTranslation{February} 2025} % Date
 { % Description(s)
 \begin{cvitems}
-  \item {
-    \ifenglish{Validated foundational understanding of cloud concepts and Azure services, pricing, SLAs, and lifecycle}
-    \else{Convalidata comprensione fondamentale dei concetti cloud e dei servizi Azure, prezzi, SLA e ciclo di vita}
-    \fi
-  }
+  \item {\GetTranslation{cer-az900-desc}}
 \end{cvitems}
 }
 
@@ -38,14 +32,10 @@
 {Microsoft Certified} % Category
 {AI-900: Azure AI Fundamentals} % Certification
 {Microsoft} % Authority
-{Mar 2025} % Date
+{\GetTranslation{March} 2025} % Date
 { % Description(s)
 \begin{cvitems}
-  \item {
-    \ifenglish{Demonstrated knowledge of common AI workloads and Microsoft's AI services for machine learning, computer vision, natural language processing, and conversational AI}
-    \else{Dimostrata conoscenza dei comuni carichi di lavoro AI e dei servizi Microsoft AI per machine learning, computer vision, elaborazione del linguaggio naturale e AI conversazionale}
-    \fi
-  }
+  \item {\GetTranslation{cer-ai900-desc}}
 \end{cvitems}
 }
 
@@ -53,14 +43,10 @@
 {Microsoft Certified} % Category
 {AI-102: Azure AI Engineer Associate} % Certification
 {Microsoft} % Authority
-{\ifenglish{Jun 2025}\else{Giu 2025}\fi} % Date
+{\GetTranslation{June} 2025} % Date
 { % Description(s)
 \begin{cvitems}
-  \item {
-    \ifenglish{Proven ability to implement and manage AI solutions on Azure, including cognitive services, knowledge mining, conversational and agentic AI}
-    \else{Comprovata capacità di implementare e gestire soluzioni AI su Azure, inclusi servizi cognitivi, knowledge mining, AI conversazionale e agentica}
-    \fi
-  }
+  \item {\GetTranslation{cer-ai102-desc}}
 \end{cvitems}
 }
 

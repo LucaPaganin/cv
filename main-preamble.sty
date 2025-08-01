@@ -8,6 +8,7 @@
 \usepackage{ifthen}
 \usepackage[english,italian]{babel}
 \usepackage{translations}
+\usepackage{custom-commands}
 
 
 %------------------------------------------------------------
@@ -43,6 +44,12 @@
 \def\French{French}
 \def\English{English}
 
+% Define section divider with optional width parameter (left-aligned)
+\newcommand{\cvsectiondivider}[1][\textwidth]{
+  \vspace{0.5em}
+  \noindent\rule{#1}{0.3pt}
+  \vspace{0.5em}
+}
 
 
 \endinput

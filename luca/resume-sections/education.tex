@@ -18,26 +18,20 @@
 % Usage: \cventry[<url>]{<position>}{<title>}{<location>}{<date>}{<description>}
 
 \cventry
-{\ifenglish{PhD in Physics and Nanosciences}\else{Dottorato di Ricerca in Fisica e Nanoscienze}\fi} % Degree
-{\unigeOrg} % Institution
-{\genoaLoc} % Location
+{\GetTranslation{edu-phd-title}} % Degree
+{\GetTranslation{org-unige}} % Institution
+{\GetTranslation{loc-genoa}} % Location
 {31/10/2018 -- 31/10/2021} % Date(s)
 { % Description(s) bullet points
 \begin{cvitems}
   \item {
-    \ifenglish{Thesis: ``Improving the Euclid performances: from spectroscopic simulations to the 6x2pt statistics''}
-    \else{Tesi: ``Improving the Euclid performances: from spectroscopic simulations to the 6x2pt statistics''}
-    \fi
+    \GetTranslation{edu-phd-thesis}
   }
   \item {
-    \ifenglish{Euclid (ESA) collaboration: simulations, data analysis, scientific software development}
-    \else{Collaborazione Euclid (ESA): simulazioni, analisi dati, cosmologia, sviluppo software scientifico}
-    \fi
+    \GetTranslation{edu-phd-collab}
   }
   \item {
-    \ifenglish{Skills: Python, Git, GitLab, Docker, UNIX, bash scripting, IDEs (PyCharm, VS Code)}
-    \else{Competenze: Python, Git, GitLab, Docker, UNIX, bash scripting, IDEs (PyCharm, VS Code)}
-    \fi
+    \GetTranslation{edu-phd-skills}
   }
 \end{cvitems}
 }
@@ -45,26 +39,20 @@
 %------------------------------------------------
 
 \cventry
-{\ifenglish{Master of Science (MSc) in Physics}\else{Laurea Magistrale in Fisica}\fi} % Degree
-{\unigeOrg} % Institution
-{\genoaLoc} % Location
+{\GetTranslation{edu-msc-title}} % Degree
+{\GetTranslation{org-unige}} % Institution
+{\GetTranslation{loc-genoa}} % Location
 {22/09/2016 -- 24/10/2018} % Date(s)
 { % Description(s) bullet points
 \begin{cvitems}
   \item {
-    \ifenglish{Thesis: "Gravitational effects on the metastability of the Universe ground state"}
-    \else{Tesi: "Gravitational effects on the metastability of the Universe ground state"}
-    \fi
+    \GetTranslation{edu-msc-thesis}
   }
   \item {
-    \ifenglish{Final grade: 110/110 cum laude}
-    \else{Voto finale: 110/110 e lode}
-    \fi
+    \GetTranslation{edu-msc-grade}
   }
   \item {
-    \ifenglish{Fields of study: Theoretical physics, cosmology, gravity}
-    \else{Campi di studio: Fisica teorica, cosmologia, gravità}
-    \fi
+    \GetTranslation{edu-msc-fields}
   }
 \end{cvitems}
 }
@@ -73,21 +61,17 @@
 %------------------------------------------------
 
 \cventry
-{\ifenglish{Bachelor of Science (BSc) in Physics}\else{Laurea Triennale in Fisica}\fi} % Degree
-{\unigeOrg} % Institution
-{\genoaLoc} % Location
+{\GetTranslation{edu-bsc-title}} % Degree
+{\GetTranslation{org-unige}} % Institution
+{\GetTranslation{loc-genoa}} % Location
 {22/09/2013 -- 27/09/2016} % Date(s)
 { % Description(s) bullet points
 \begin{cvitems}
   \item {
-    \ifenglish{Thesis: ``The tunnel effect in the context of the alpha decay''}
-    \else{Tesi: ``L'effetto tunnel nel contesto del decadimento alfa''}
-    \fi
+    \GetTranslation{edu-bsc-thesis}
   }
   \item {
-    \ifenglish{Final grade: 110/110 cum laude}
-    \else{Voto finale: 110/110 e lode}
-    \fi
+    \GetTranslation{edu-bsc-grade}
   }
 \end{cvitems}
 }

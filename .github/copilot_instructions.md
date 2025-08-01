@@ -1,3 +1,6 @@
+## General
+- YOU MUST NOT TRY TO COMPILE, I will do it.
+
 ## Translations
 - Remember to keep adjacent the translations for each language
     * The first translation is always the English one, followed by the Italian one.
@@ -6,6 +9,29 @@
     * Cloud Backend Developer is the same in both languages, so it MUST NOT be translated.
     * Junior Full Stack Developer is the same in both languages, so it MUST NOT be translated.
     * Python or JavaScript are the same in both languages, so they MUST NOT be translated.
+    * Microsoft Azure is the same in both languages, so it MUST NOT be translated.
+    * Microsoft Certified is the same in both languages, so it MUST NOT be translated.
+- For section titles DO NOT USE translations, instead implement a conditional flow like the following
+    ```
+    \ifenglish
+      \cvsection{Professional Experience}
+    \else
+      \ifitalian
+        \cvsection{Esperienza Lavorativa}
+      \fi
+    \fi
+    ```
+
+- section titles translations are not needed
+
+- Use basic translations whenever possible, otherwise re-use or define a new specific translation in cv-translations.sty
+- whenever you need to define a new translation, follow the existing patterns in cv-translations.sty and define them in that file
+- For translations, use the \GetTranslation{key} command to retrieve the translation key, like this:
+    ```
+    \GetTranslation{cer-az900-desc}
+    ```
+- For descriptions, avoid itemization when possible and create a single aggregate piece of text to be translated
+
 ### Prefixes and naming conventions
 - Use adequate 3 letters prefixes for each translation key, which must have an adequate level of specificity.
 - There must be at most two level of nesting, going from left to right with increasing specificity.
@@ -19,7 +45,8 @@
     - skl for skills
     - edu for education
     - pub for publications
-- Third level:
+    - cer for certifications
+
 
 
 ## Itemization
