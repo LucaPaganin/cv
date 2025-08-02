@@ -21,7 +21,7 @@
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \cventry
 {
-    \ifenglish Co-author\else Co-autore\fi
+    \GetTranslation{pub-role-coauthor}
 }
 {
     Sentient Spaces: Intelligent Totem Use Case in the ECSEL FRACTAL Project
@@ -35,49 +35,43 @@
 %------------------------------------------------
 
 \cventry
-{\ifenglish Co-author\else Co-autore\fi} % Role
+{\GetTranslation{pub-role-first-author}} % Role
 {Euclid preparation: 6x2pt analysis for Euclid main probes} % Title
 {Genoa, Italy}
 {2021} % Date(s)
 { % Description(s)
 \begin{cvitems}
-  \ifenglish
-  \item {Euclid collaboration, cosmological data analysis, publication in progress}
-  \else
-  \item {Collaborazione Euclid, analisi dati cosmologici, pubblicazione in corso}
-  \fi
+  \item {
+    \GetTranslation{pub-euclid-6x2pt-desc}
+  }
 \end{cvitems}
 }
 
 %------------------------------------------------
 
 \cventry
-{\ifenglish Co-author\else Co-autore\fi} % Role
+{\GetTranslation{pub-role-coauthor}} % Role
 {Euclid: Forecasts from the void-lensing cross-correlation} % Title
 {University of Genoa, Genoa, Italy}
 {2021} % Date(s)
 { % Description(s)
 \begin{cvitems}
-  \ifenglish
-  \item {Euclid collaboration, cosmological forecasts, publication in progress}
-  \else
-  \item {Collaborazione Euclid, previsioni cosmologiche, pubblicazione in corso}
-  \fi
+  \item {
+    \GetTranslation{pub-euclid-void-desc}
+  }
 \end{cvitems}
 }
 %------------------------------------------------
 \cventry
-{\ifenglish Co-author\else Co-autore\fi} % Role
+{\GetTranslation{pub-role-coauthor}} % Role
 {A Proposal for Relative In-flight Flux Self-calibrations for Spectro-photometric Surveys} % Title
 {University of Genoa, Genoa, Italy}
 {2021} % Date(s)
 {
 \begin{cvitems}
-  \ifenglish
-  \item {Method for relative in-flight flux self-calibration of spectrophotometers, simulations and validation}
-  \else
-  \item {Metodo per la auto-calibrazione in volo di spettrofotometri su satellite, simulazioni e validazione}
-  \fi
+  \item {
+    \GetTranslation{pub-flux-calibration-desc}
+  }
 \end{cvitems}
 }
 

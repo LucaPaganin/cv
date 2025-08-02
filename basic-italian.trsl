@@ -1,0 +1,25 @@
+% this is file basic-italian.trsl
+\ProvideDictionaryFor{Italian}{basic}[0.0.1]
+
+% --- LOCATION TRANSLATIONS ---
+\ProvideDictTranslation{Genoa}{Genova, Italia}
+\ProvideDictTranslation{Savona}{Savona, Italia}
+
+% --- DATE AND TIME TRANSLATIONS ---
+\ProvideDictTranslation{Present}{Attuale}
+% MONTHS
+\ProvideDictTranslation{January}{Gennaio}
+\ProvideDictTranslation{February}{Febbraio}
+\ProvideDictTranslation{March}{Marzo}
+\ProvideDictTranslation{April}{Aprile}
+\ProvideDictTranslation{May}{Maggio}
+\ProvideDictTranslation{June}{Giugno}
+\ProvideDictTranslation{July}{Luglio}
+\ProvideDictTranslation{August}{Agosto}
+\ProvideDictTranslation{September}{Settembre}
+\ProvideDictTranslation{October}{Ottobre}
+\ProvideDictTranslation{November}{Novembre}
+\ProvideDictTranslation{December}{Dicembre}
+
+
+\endinput
