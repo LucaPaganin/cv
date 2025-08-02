@@ -2,6 +2,23 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Compile CV",
+            "type": "shell",
+            "command": "rm -rf out/; sudo chmod +x compile_cv.sh; ./compile_cv.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "problemMatcher": [],
+            "detail": "Builds the resume PDF using docker-compose"
+        },
+        {
             "label": "Build Resume PDF",
             "type": "shell",
             "command": "sudo rm -rf out/; sudo chmod +x compile.sh; docker compose run --rm latex_compiler",

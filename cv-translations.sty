@@ -1,90 +1,260 @@
-% --------------------------------------------
-% --- LOCATION TRANSLATIONS ---
-% --------------------------------------------
-\DeclareTranslation{english}{loc_genoa}{Genoa, Italy}
-\DeclareTranslation{italian}{loc_genoa}{Genova, Italia}
-\DeclareTranslation{english}{loc_savona}{Savona, Italy}
-\DeclareTranslation{italian}{loc_savona}{Savona, Italia}
-
-
-% --------------------------------------------
-% --- DATE AND TIME TRANSLATIONS ---
-% --------------------------------------------
-\DeclareTranslation{english}{tim_present}{Present}
-\DeclareTranslation{italian}{tim_present}{Attuale}
-% MONTHS
-\DeclareTranslation{english}{tim_jan}{January}
-\DeclareTranslation{italian}{tim_jan}{Gennaio}
-\DeclareTranslation{english}{tim_feb}{February}
-\DeclareTranslation{italian}{tim_feb}{Febbraio}
-\DeclareTranslation{english}{tim_mar}{March}
-\DeclareTranslation{italian}{tim_mar}{Marzo}
-\DeclareTranslation{english}{tim_apr}{April}
-\DeclareTranslation{italian}{tim_apr}{Aprile}
-\DeclareTranslation{english}{tim_may}{May}
-\DeclareTranslation{italian}{tim_may}{Maggio}
-\DeclareTranslation{english}{tim_jun}{June}
-\DeclareTranslation{italian}{tim_jun}{Giugno}
-\DeclareTranslation{english}{tim_jul}{July}
-\DeclareTranslation{italian}{tim_jul}{Luglio}
-\DeclareTranslation{english}{tim_aug}{August}
-\DeclareTranslation{italian}{tim_aug}{Agosto}
-\DeclareTranslation{english}{tim_sep}{September}
-\DeclareTranslation{italian}{tim_sep}{Settembre}
-\DeclareTranslation{english}{tim_oct}{October}
-\DeclareTranslation{italian}{tim_oct}{Ottobre}
-\DeclareTranslation{english}{tim_nov}{November}
-\DeclareTranslation{italian}{tim_nov}{Novembre}
-\DeclareTranslation{english}{tim_dec}{December}
-\DeclareTranslation{italian}{tim_dec}{Dicembre}
+\ProvidesPackage{cv-translations}
+\usepackage{translations}
 
 % --------------------------------------------
 % --- ORGANIZATION TRANSLATIONS ---
 % --------------------------------------------
-\DeclareTranslation{english}{org_unige}{University of Genoa, Italy}
-\DeclareTranslation{italian}{org_unige}{Università degli Studi di Genova, Italia}
+\DeclareTranslation{english}{org-unige}{University of Genoa, Italy}
+\DeclareTranslation{italian}{org-unige}{Università degli Studi di Genova, Italia}
 
 % --------------------------------------------
 % --- SECTION TRANSLATIONS ---
 % --------------------------------------------
-\DeclareTranslation{english}{sec_job_experience}{Professional Experience}
-\DeclareTranslation{italian}{sec_job_experience}{Esperienze professionali}
+\DeclareTranslation{english}{sec-job-experience}{Professional Experience}
+\DeclareTranslation{italian}{sec-job-experience}{Esperienze professionali}
 
 % --------------------------------------------
 % --- JOB EXPERIENCE TRANSLATIONS ---
 % --------------------------------------------
 % RINA job descriptions
 % --------------------------------------------
-\DeclareTranslation{english}{job_rina_desc}{Responsible for developing a serverless Python backend on Azure Functions for RINA's digital certification platform, primarily serving steel mill clients to certify their environmental sustainability efforts.}
-\DeclareTranslation{italian}{job_rina_desc}{Mi occupo dello sviluppo del backend serverless in Python su Azure Functions per la piattaforma di certificazione digitale di RINA, rivolta principalmente alle acciaierie clienti che vogliono certificare il loro impegno di sostenibilità ambientale.}
+\DeclareTranslation{english}{job-rina-desc}{
+    I started by developing a serverless Python backend on Azure Functions for RINA's 
+    digital certification platform, primarily serving steel mill clients to certify their 
+    environmental sustainability efforts.
+    Currently I am specializing as AI Engineer and Cloud Developer with particular focus on 
+    Microsoft Azure Cloud Services.
+}
+\DeclareTranslation{italian}{job-rina-desc}{
+    Ho iniziato occupandomi dello sviluppo del backend serverless in Python su Azure Functions
+    per la piattaforma di certificazione digitale di RINA, rivolta principalmente alle acciaierie 
+    clienti che vogliono certificare il loro impegno di sostenibilità ambientale.
+    Attualmente mi sto specializzando come AI Engineer e Cloud Developer con focalizzato ai 
+    Microsoft Azure Cloud Services.
+}
 
 % Rulex job descriptions
 % --------------------------------------------
-\DeclareTranslation{english}{job_rulex_desc1}{As part of the software development team, handled inter_service messaging, REST API implementation, and DevOps activities, and built/maintained the CLI for the Rulex Platform.}
-\DeclareTranslation{italian}{job_rulex_desc1}{Come parte del team di sviluppo software, mi sono occupato della messaggistica tra microservizi, implementazione di API REST e attività DevOps. Ho anche costruito e mantenuto l'interfaccia da riga di comando (CLI) per il software Rulex Platform.}
+\DeclareTranslation{english}{job-rulex-desc1}{As part of the software development team, handled inter-service messaging, REST API implementation, and DevOps activities, and built/maintained the CLI for the Rulex Platform.}
+\DeclareTranslation{italian}{job-rulex-desc1}{Come parte del team di sviluppo software, mi sono occupato della messaggistica tra microservizi, implementazione di API REST e attività DevOps. Ho anche costruito e mantenuto l'interfaccia da riga di comando (CLI) per il software Rulex Platform.}
 %
-\DeclareTranslation{english}{job_rulex_desc2}{Built and maintained CI/CD pipelines using Azure DevOps Pipelines.}
-\DeclareTranslation{italian}{job_rulex_desc2}{Costruzione e mantenimento di pipeline CI/CD con Azure DevOps Pipelines.}
+\DeclareTranslation{english}{job-rulex-desc2}{Built and maintained CI/CD pipelines using Azure DevOps Pipelines.}
+\DeclareTranslation{italian}{job-rulex-desc2}{Costruzione e mantenimento di pipeline CI/CD con Azure DevOps Pipelines.}
 %
-\DeclareTranslation{english}{job_rulex_desc3}{Deployed and tested cloud infrastructure with Terraform and Kubernetes.}
-\DeclareTranslation{italian}{job_rulex_desc3}{Deployment e testing dell'infrastruttura cloud utilizzando Terraform e Kubernetes.}
+\DeclareTranslation{english}{job-rulex-desc3}{Deployed and tested cloud infrastructure with Terraform and Kubernetes.}
+\DeclareTranslation{italian}{job-rulex-desc3}{Deployment e testing dell'infrastruttura cloud utilizzando Terraform e Kubernetes.}
 %
-\DeclareTranslation{english}{job_rulex_desc4}{Developed primarily in Python and JavaScript (Node.js and React), including C++ plugins invoked from Python.}
-\DeclareTranslation{italian}{job_rulex_desc4}{Ho sviluppato principalmente in Python e JavaScript (Node.js e React), con qualche plugin in C++ chiamato da Python.}
+\DeclareTranslation{english}{job-rulex-desc4}{Developed primarily in Python and JavaScript (Node.js and React), including C++ plugins invoked from Python.}
+\DeclareTranslation{italian}{job-rulex-desc4}{Ho sviluppato principalmente in Python e JavaScript (Node.js e React), con qualche plugin in C++ chiamato da Python.}
 
 % University Teaching Assistant role
-\DeclareTranslation{english}{job_unige_teach_title}{University Teaching Assistant}
-\DeclareTranslation{italian}{job_unige_teach_title}{Esercitatore universitario}
+\DeclareTranslation{english}{job-unige-teach-title}{University Teaching Assistant}
+\DeclareTranslation{italian}{job-unige-teach-title}{Esercitatore universitario}
 %
-\DeclareTranslation{english}{job_unige_teach_desc}{Delivered lectures and guided exercises for the General Physics course aimed at Chemical and Electrical Engineering students.}
-\DeclareTranslation{italian}{job_unige_teach_desc}{Lezioni frontali e esercitazioni guidate per il corso di Fisica Generale rivolto agli studenti di Ingegneria Chimica ed Elettrica.}
+\DeclareTranslation{english}{job-unige-teach-desc}{Delivered lectures and guided exercises for the General Physics course aimed at Chemical and Electrical Engineering students.}
+\DeclareTranslation{italian}{job-unige-teach-desc}{Lezioni frontali e esercitazioni guidate per il corso di Fisica Generale rivolto agli studenti di Ingegneria Chimica ed Elettrica.}
 %
-\DeclareTranslation{english}{job_unige_tutor_title}{University Tutor}
-\DeclareTranslation{italian}{job_unige_tutor_title}{Tutor universitario}
+\DeclareTranslation{english}{job-unige-tutor-title}{University Tutor}
+\DeclareTranslation{italian}{job-unige-tutor-title}{Tutor universitario}
 %
-\DeclareTranslation{english}{job_unige_tutor_desc1}{Academic tutoring for General Physics, Mathematical Analysis, and Linear Algebra for first_year students in Physics and Mathematics degree courses.}
-\DeclareTranslation{italian}{job_unige_tutor_desc1}{Tutorato didattico per Fisica Generale, Analisi Matematica e Algebra Lineare per studenti del primo anno dei corsi di Laurea in Fisica e Matematica.}
+\DeclareTranslation{english}{job-unige-tutor-desc1}{Academic tutoring for General Physics, Mathematical Analysis, and Linear Algebra for first-year students in Physics and Mathematics degree courses.}
+\DeclareTranslation{italian}{job-unige-tutor-desc1}{Tutorato didattico per Fisica Generale, Analisi Matematica e Algebra Lineare per studenti del primo anno dei corsi di Laurea in Fisica e Matematica.}
 %
-\DeclareTranslation{english}{job_unige_tutor_desc2}{Development of communication and interpersonal skills through student support.}
-\DeclareTranslation{italian}{job_unige_tutor_desc2}{Sviluppo di competenze comunicative e relazionali attraverso il supporto agli studenti.}
+\DeclareTranslation{english}{job-unige-tutor-desc2}{Development of communication and interpersonal skills through student support.}
+\DeclareTranslation{italian}{job-unige-tutor-desc2}{Sviluppo di competenze comunicative e relazionali attraverso il supporto agli studenti.}
 
+% --------------------------------------------
+% --- CERTIFICATION TRANSLATIONS ---
+% --------------------------------------------
+
+% Certification descriptions
+\DeclareTranslation{english}{cer-az900-desc}{Validated foundational understanding of cloud concepts and Azure services, pricing, SLAs, and lifecycle}
+\DeclareTranslation{italian}{cer-az900-desc}{Convalidata comprensione fondamentale dei concetti cloud e dei servizi Azure, prezzi, SLA e ciclo di vita}
+
+\DeclareTranslation{english}{cer-ai900-desc}{Demonstrated knowledge of common AI workloads and Microsoft's AI services for machine learning, computer vision, natural language processing, and conversational AI}
+\DeclareTranslation{italian}{cer-ai900-desc}{Dimostrata conoscenza dei comuni carichi di lavoro AI e dei servizi Microsoft AI per machine learning, computer vision, elaborazione del linguaggio naturale e AI conversazionale}
+
+\DeclareTranslation{english}{cer-ai102-desc}{Proven ability to implement and manage AI solutions on Azure, including cognitive services, knowledge mining, conversational and agentic AI}
+\DeclareTranslation{italian}{cer-ai102-desc}{Comprovata capacità di implementare e gestire soluzioni AI su Azure, inclusi servizi cognitivi, knowledge mining, AI conversazionale e agentica}
+
+% --------------------------------------------
+% --- EDUCATION TRANSLATIONS ---
+% --------------------------------------------
+\DeclareTranslation{english}{edu-phd-title}{PhD in Physics and Nanosciences}
+\DeclareTranslation{italian}{edu-phd-title}{Dottorato di Ricerca in Fisica e Nanoscienze}
+
+\DeclareTranslation{english}{edu-phd-thesis}{Thesis: "Improving the Euclid performances: from spectroscopic simulations to the 6x2pt statistics"}
+\DeclareTranslation{italian}{edu-phd-thesis}{Tesi: "Improving the Euclid performances: from spectroscopic simulations to the 6x2pt statistics"}
+
+\DeclareTranslation{english}{edu-phd-collab}{Euclid (ESA) collaboration: simulations, data analysis, scientific software development}
+\DeclareTranslation{italian}{edu-phd-collab}{Collaborazione Euclid (ESA): simulazioni, analisi dati, cosmologia, sviluppo software scientifico}
+
+\DeclareTranslation{english}{edu-phd-skills}{Skills: Python, Git, GitLab, Docker, UNIX, bash scripting, IDEs (PyCharm, VS Code)}
+\DeclareTranslation{italian}{edu-phd-skills}{Competenze: Python, Git, GitLab, Docker, UNIX, bash scripting, IDEs (PyCharm, VS Code)}
+
+\DeclareTranslation{english}{edu-msc-title}{Master of Science (MSc) in Physics}
+\DeclareTranslation{italian}{edu-msc-title}{Laurea Magistrale in Fisica}
+
+\DeclareTranslation{english}{edu-msc-thesis}{Thesis: "Gravitational effects on the metastability of the Universe ground state"}
+\DeclareTranslation{italian}{edu-msc-thesis}{Tesi: "Gravitational effects on the metastability of the Universe ground state"}
+
+\DeclareTranslation{english}{edu-msc-grade}{Final grade: 110/110 cum laude}
+\DeclareTranslation{italian}{edu-msc-grade}{Voto finale: 110/110 e lode}
+
+\DeclareTranslation{english}{edu-msc-fields}{Fields of study: Theoretical physics, cosmology, gravity}
+\DeclareTranslation{italian}{edu-msc-fields}{Campi di studio: Fisica teorica, cosmologia, gravità}
+
+\DeclareTranslation{english}{edu-bsc-title}{Bachelor of Science (BSc) in Physics}
+\DeclareTranslation{italian}{edu-bsc-title}{Laurea Triennale in Fisica}
+
+\DeclareTranslation{english}{edu-bsc-thesis}{Thesis: "The tunnel effect in the context of the alpha decay"}
+\DeclareTranslation{italian}{edu-bsc-thesis}{Tesi: "L'effetto tunnel nel contesto del decadimento alfa"}
+
+\DeclareTranslation{english}{edu-bsc-grade}{Final grade: 110/110 cum laude}
+\DeclareTranslation{italian}{edu-bsc-grade}{Voto finale: 110/110 e lode}
+
+% --------------------------------------------
+% --- LANGUAGE TRANSLATIONS ---
+% --------------------------------------------
+\DeclareTranslation{english}{skl-lang-italian}{Italian}
+\DeclareTranslation{italian}{skl-lang-italian}{Italiano}
+
+\DeclareTranslation{english}{skl-lang-mothertongue}{mother tongue}
+\DeclareTranslation{italian}{skl-lang-mothertongue}{madrelingua}
+
+\DeclareTranslation{english}{skl-lang-english}{English}
+\DeclareTranslation{italian}{skl-lang-english}{Inglese}
+
+% --------------------------------------------
+% --- PROFESSIONAL ACTIVITIES TRANSLATIONS ---
+% --------------------------------------------
+\DeclareTranslation{english}{job-euclid-leader}{Key Project Leader of Euclid collaboration 6x2pt forecast}
+\DeclareTranslation{italian}{job-euclid-leader}{Leader del Key Project sul forecast 6x2pt della collaborazione Euclid}
+
+\DeclareTranslation{english}{loc-infn}{INFN, Italy}
+\DeclareTranslation{italian}{loc-infn}{INFN, Italia}
+
+% --------------------------------------------
+% --- PROJECT TRANSLATIONS ---
+% --------------------------------------------
+\DeclareTranslation{english}{skl-os}{Operating Systems}
+\DeclareTranslation{italian}{skl-os}{Sistemi Operativi}
+
+\DeclareTranslation{english}{proj-seyfert-desc1}{Open-source Python tool for Fisher matrix forecasting of cosmological surveys.}
+\DeclareTranslation{italian}{proj-seyfert-desc1}{Software Python open source per fare previsioni basate su matrici di Fisher sulle prestazioni di survey cosmologici.}
+
+\DeclareTranslation{english}{proj-seyfert-desc2}{Cosmological analysis and predictions using advanced statistical methods and optimized numerical integration.}
+\DeclareTranslation{italian}{proj-seyfert-desc2}{Analisi e predizioni cosmologiche basate su metodi statistici avanzati e tecniche ottimizzate di integrazione numerica.}
+
+\DeclareTranslation{english}{proj-solarsys-desc1}{Simulator of solar system dynamics with 3D animation of planetary orbits.}
+\DeclareTranslation{italian}{proj-solarsys-desc1}{Progetto che ho sviluppato per gli studenti delle scuole superiori allo stage di orientamento universitario.}
+
+\DeclareTranslation{english}{proj-solarsys-desc2}{Numerical integration in C++ and web interface developed with Dash.}
+\DeclareTranslation{italian}{proj-solarsys-desc2}{Simulatore della dinamica del sistema solare con animazione 3D delle orbite planetarie.}
+
+\DeclareTranslation{english}{proj-solarsys-desc3}{Numerical integration in C++ and web interface developed with Dash.}
+\DeclareTranslation{italian}{proj-solarsys-desc3}{Integrazione numerica in C++ e interfaccia web con Dash.}
+
+\DeclareTranslation{english}{proj-webscraping-desc1}{Collection of web scraping and data processing tools, including a Chrome extension for property listings and API scrapers for immobiliare.it.}
+\DeclareTranslation{italian}{proj-webscraping-desc1}{Collezione di strumenti per web scraping e data processing, inclusa estensione Chrome per listing immobiliari e scraper API per immobiliare.it.}
+
+\DeclareTranslation{english}{proj-webscraping-desc2}{Supports data storage in CSV, SQLite, Azure Cosmos DB, and JSON formats.}
+\DeclareTranslation{italian}{proj-webscraping-desc2}{Supporto all'archiviazione su CSV, SQLite, Azure Cosmos DB e JSON.}
+
+\DeclareTranslation{english}{proj-website-desc}{Multilingual personal website with dark mode, responsive design, and interactive components (timeline, carousel).}
+\DeclareTranslation{italian}{proj-website-desc}{Sito personale multilanguage con dark mode, design responsive e componenti interattivi (timeline, carousel).}
+
+\DeclareTranslation{english}{proj-collectify-desc1}{Full stack web application for aggregating and presenting user data about collectibles inventory}
+\DeclareTranslation{italian}{proj-collectify-desc1}{Applicazione web basata su Flask per l'aggregazione e presentazione di dati utente tramite template dinamici e asset statici.}
+
+\DeclareTranslation{english}{proj-collectify-desc2}{Backend written in Flask with SQLite database}
+\DeclareTranslation{italian}{proj-collectify-desc2}{Architettura MVC con routing in app.py e gestione di layout e statici in templates/.}
+
+\DeclareTranslation{english}{proj-collectify-desc3}{Frontend written in React.}
+\DeclareTranslation{italian}{proj-collectify-desc3}{Interfaccia grafica scritta in React.}
+
+% --------------------------------------------
+% --- PUBLICATIONS TRANSLATIONS ---
+% --------------------------------------------
+\DeclareTranslation{english}{pub-role-coauthor}{Co-author}
+\DeclareTranslation{italian}{pub-role-coauthor}{Co-autore}
+\DeclareTranslation{english}{pub-role-first-author}{First author}
+\DeclareTranslation{italian}{pub-role-first-author}{Primo autore}
+
+\DeclareTranslation{english}{pub-euclid-6x2pt-desc}{Euclid collaboration, cosmological data analysis, published on Astronomy \& Astrophysics}
+\DeclareTranslation{italian}{pub-euclid-6x2pt-desc}{Collaborazione Euclid, analisi dati cosmologici, pubblicato su Astronomy \& Astrophysics}
+
+\DeclareTranslation{english}{pub-euclid-void-desc}{Euclid collaboration, cosmological forecasts, published on Astronomy \& Astrophysics}
+\DeclareTranslation{italian}{pub-euclid-void-desc}{Collaborazione Euclid, previsioni cosmologiche, pubblicato su Astronomy \& Astrophysics}
+
+\DeclareTranslation{english}{pub-flux-calibration-desc}{
+    Method for relative in-flight flux self-calibration of spectrophotometers, simulations and validation.
+    Published on the Astronomical Society of the Pacific.
+}
+\DeclareTranslation{italian}{pub-flux-calibration-desc}{
+    Metodo per la auto-calibrazione in volo di spettrofotometri su satellite, simulazioni e validazione.
+    Pubblicato su Astronomical Society of the Pacific.
+}
+
+% --------------------------------------------
+% --- CONFERENCES TRANSLATIONS ---
+% --------------------------------------------
+\DeclareTranslation{english}{loc-milan}{Milan, Italy}
+\DeclareTranslation{italian}{loc-milan}{Milano, Italia}
+
+\DeclareTranslation{english}{loc-bologna}{Bologna, Italy}
+\DeclareTranslation{italian}{loc-bologna}{Bologna, Italia}
+
+\DeclareTranslation{english}{loc-laquila}{L'Aquila, Italy}
+\DeclareTranslation{italian}{loc-laquila}{L'Aquila, Italia}
+
+\DeclareTranslation{english}{loc-helsinki}{Helsinki, Finland}
+\DeclareTranslation{italian}{loc-helsinki}{Helsinki, Finlandia}
+
+\DeclareTranslation{english}{loc-barcelona-virtual}{Barcelona (virtual)}
+\DeclareTranslation{italian}{loc-barcelona-virtual}{Barcellona (virtuale)}
+
+\DeclareTranslation{english}{loc-lausanne-virtual}{Lausanne, Switzerland (virtual)}
+\DeclareTranslation{italian}{loc-lausanne-virtual}{Lausanne, Svizzera (virtuale)}
+
+\DeclareTranslation{english}{loc-paris}{Paris, France}
+\DeclareTranslation{italian}{loc-paris}{Parigi, Francia}
+
+\DeclareTranslation{english}{loc-genoa}{Genoa, Italy}
+\DeclareTranslation{italian}{loc-genoa}{Genova, Italia}
+
+\DeclareTranslation{english}{conf-role-participant}{Participant}
+\DeclareTranslation{italian}{conf-role-participant}{Partecipante}
+
+\DeclareTranslation{english}{conf-euclid-national}{Third National Meeting of the Euclid Collaboration}
+\DeclareTranslation{italian}{conf-euclid-national}{Terzo Meeting Nazionale Collaborazione Euclid}
+
+\DeclareTranslation{english}{conf-universum-desc}{National cosmology conference discussing scientific activities and collaborations}
+\DeclareTranslation{italian}{conf-universum-desc}{Conferenza nazionale di cosmologia, discussione attività scientifiche e collaborazioni}
+
+\DeclareTranslation{english}{conf-euclid-meeting-desc}{Annual Euclid collaboration meeting to present mission status and scientific pipelines}
+\DeclareTranslation{italian}{conf-euclid-meeting-desc}{Meeting annuale della collaborazione Euclid, presentazione stato missione e pipelines scientifiche}
+
+\DeclareTranslation{english}{conf-euclid-national-desc}{Italian Euclid meeting preparing pre-launch phases and data exploitation}
+\DeclareTranslation{italian}{conf-euclid-national-desc}{Meeting italiano della collaborazione Euclid, preparazione fasi pre-lancio e sfruttamento dati}
+
+\DeclareTranslation{english}{conf-euclid-2020-desc}{Annual Euclid meeting, mission status and pipelines update (virtual due to COVID-19)}
+\DeclareTranslation{italian}{conf-euclid-2020-desc}{Meeting annuale Euclid, aggiornamento stato missione e pipelines (virtuale per COVID-19)}
+
+\DeclareTranslation{english}{conf-euclid-2021-desc}{Annual Euclid meeting, mission status and pipelines update (virtual due to COVID-19)}
+\DeclareTranslation{italian}{conf-euclid-2021-desc}{Meeting annuale Euclid, aggiornamento stato missione e pipelines (virtuale per COVID-19)}
+
+\DeclareTranslation{english}{conf-fractal-2022-desc}{Technical workshop on the European Fractal project, development of intelligent retail totem}
+\DeclareTranslation{italian}{conf-fractal-2022-desc}{Workshop tecnico su progetto europeo Fractal, sviluppo totem intelligente per retail}
+
+\DeclareTranslation{english}{conf-fractal-2023-desc}{Fractal collaboration workshop on use case integration, AI totem development for shopping malls}
+\DeclareTranslation{italian}{conf-fractal-2023-desc}{Collaborazione Fractal, integrazione use cases, sviluppo totem AI per centri commerciali}
+
+% --------------------------------------------
+% --- HONORS TRANSLATIONS ---
+% --------------------------------------------
+\DeclareTranslation{english}{hon-bsc-award}{BSc in Physics with 110/110 cum laude}
+\DeclareTranslation{italian}{hon-bsc-award}{Laurea Triennale in Fisica con 110/110 e lode}
+
+\DeclareTranslation{english}{hon-msc-award}{MSc in Physics with 110/110 cum laude}
+\DeclareTranslation{italian}{hon-msc-award}{Laurea Magistrale in Fisica con 110/110 e lode}
